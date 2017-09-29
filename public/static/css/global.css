@@ -1,0 +1,51 @@
+/* CSS Document */
+/*------------------------  Globa ------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-family:"Microsoft YaHei";font-size:100%;vertical-align:baseline;-webkit-text-size-adjust:100%;}
+html,body,ul,li {margin:0; padding:0; font-family:"Microsoft YaHei"; font-size:15px; }
+ul,li {list-style-type:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+body {
+
+}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;height:0px;}
+.fr{float:right;}
+.tac{text-align:center;}
+
+a{
+    color: #4c4c4c;
+	font-family:"Microsoft YaHei";
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+a:active {
+    outline: none;
+}
+input,button,select,textarea{outline:none;font-family:"Microsoft YaHei";}
+a:hover{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 14px;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
