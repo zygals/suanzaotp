@@ -96,10 +96,10 @@
                         </div>
 
                         <div class="col-xs-">
-                            <a href="<?php echo url('edit',"id=$row_->id")?>">
+                            <!--<a href="<?php /*echo url('edit',"id=$row_->id")*/?>">
                                 <button class="btn btn-success btn-xs edit_">修改</button>
-                            </a>
-                            <a href="{:url('downfile')}?path={$row_->path}">下载</a>
+                            </a>-->
+                            <a href="{:url('downfile')}?path={$row_->path}"><button class="btn btn-success btn-xs edit_">下载</button></a>
                             <button class="btn btn-danger btn-xs del_cate" data-toggle="modal"
                                     data-target="#deleteSource" data-id="<?= $row_['id'] ?>" onclick="del_(this)"> 删除
                             </button>

@@ -23,7 +23,7 @@ class DfileController extends BaseController {
 
     public function create() {
 
-        return $this->fetch('', ['act' => 'save']);
+        return $this->fetch('', ['act' => 'save','actname'=>'添加']);
     }
 
     public function save(Request $request) {
@@ -68,7 +68,7 @@ class DfileController extends BaseController {
         $referer = $request->header()['referer'];
         //dump($referer);
         $row_ = $this->findById($data['id'], new Dfile());
-        return $this->fetch('create', ['row_' => $row_, 'referer' => $referer, 'act' => 'update']);
+        return $this->fetch('create', ['row_' => $row_, 'referer' => $referer, 'act' => 'update','actname'=>'修改']);
 
     }
 

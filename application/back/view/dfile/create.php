@@ -1,5 +1,5 @@
 {extend name='public:base' /}
-{block name="title"}添加{$modelName}{/block}
+{block name="title"}{$modelName}{/block}
 {block name="content"}
 <style>
     .control-label {
@@ -17,7 +17,7 @@
         <div class="col-xs-8">
             <div class="text-center">
                 <!---->
-                <h4 class="modal-title" id="gridSystemModalLabel">添加{$modelName}</h4>
+                <h4 class="modal-title" id="gridSystemModalLabel">{$actname}{$modelName}</h4>
             </div>
             <div class="">
                 <div class="container-fluid">
@@ -61,11 +61,8 @@
                     <div class="form-group" id="pc_file" style="display: none;">
                         <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>文件：</label>
                         <div class="col-xs-4 ">
-                            <?php if($act=='update'){?>
-                                {$row_->path}
 
-                            <?php }?>
-                            <input type="file" title='' class="form-control  duiqi" id="sOrd" name="path" placeholder=""><span style="color:red">上传文件，如果是修改则改变原文件。</span>
+                            <input type="file" title='' class="form-control  duiqi" id="sOrd" name="path" placeholder=""><span style="color:red">上传文件，如果文件可能因为过大上传失败，请用ftp方式上传至服务器目录：/home/wwwroot/suanzaotp/public/upload/dfile。</span>
 
                         </div>
 
