@@ -35,8 +35,9 @@ class DfileController extends BaseController {
         }
         if ($data['pc_ftp'] == 'pc') {
             $file = $request->file('path');
+
             //  $file = $_FILES;
-            /*          dump($file);
+             /*      dump($file->getInfo());
                       exit;*/
             if (empty($file)) {
                 $this->error('请上传文件或检查大小！');
@@ -53,6 +54,11 @@ class DfileController extends BaseController {
                 $this->error('请填写ftp文件名称！');
             }
             $data['path'] = '/upload/dfile/' . $data['fname'];
+            $file = ROOT_PATH.'public'.$data['path'];
+            if(!is_file($file)){
+                $this->error('请先通过ftp上传文件');
+            }
+
         }
 
         if ((new Dfile())->save($data)) {
