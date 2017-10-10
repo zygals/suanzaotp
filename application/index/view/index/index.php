@@ -64,12 +64,12 @@
                 </li>
             </ul>
         </div>
+        <div class="headBox">
+                    <h4>企业级直播解决方案，想你所想</h4>
+                    <p class="suanzao">酸枣直播，帮助企业用 10%的成本 创造100+倍的传播价值</p>
+        </div>
     </div>
     <div class="liveBox">
-        <div class="headBox">
-            <h4>企业级直播解决方案，想你所想</h4>
-            <p>酸枣直播，帮助企业用 10%的成本 创造100+倍的传播价值</p>
-        </div>
         <div id="slide">
             <ul class="slide-door clearfix">
                 <li>
@@ -211,68 +211,68 @@
             </div>
         </div>
     </div>
-    <div class="listBox">
+    <div class="listBox service">
         <h3>多种版本供你选择</h3>
         <p>基础直播服务+闪电拉新服务，帮助您的微信公众号快速增收涨粉</p>
-        <div class="listCont">
-            <div class="jcbox">
-                <p>
-                    <span>基础版</span>
-                    <span>功能费：0元/年</span>
-                    <span class="mfktBtn" p onclick="wind()">免费开通</span>
-                </p>
-                <ul>
-                    <li>付费内容载体：音频、视频</li>
-                    <li>付费形式：单节课、系列课</li>
-                    <li>运营管理：内容、用户关系、财务</li>
-                    <li>数据分析：营收趁势、用户活跃度等</li>
-                    <li>邀请卡</li>
-                    <li>评论互动</li>
-                    <li>首页名称自定义</li>
-                    <li>视频+语音直播</li>
-                    <li class="nobac">用户定向推送</li>
-                    <li class="nobac">闪电拉新</li>
-                </ul>
-            </div>
-            <div class="sybox">
-                <p>
-                    <span>试用版</span>
-                    <span>功能费：688元/年</span>
-                    <span class="mfktBtn" p onclick="wind()">立即开通</span>
-                </p>
-                <ul>
-                    <li>付费内容载体：音频、视频</li>
-                    <li>付费形式：单节课、系列课</li>
-                    <li>运营管理：内容、用户关系、财务</li>
-                    <li>数据分析：营收趁势、用户活跃度等</li>
-                    <li>邀请卡</li>
-                    <li>评论互动</li>
-                    <li>首页名称自定义</li>
-                    <li>视频+语音直播</li>
-                    <li>用户定向推送</li>
-                    <li>闪电拉新</li>
-                </ul>
-            </div>
-            <div class="hsbox">
-                <p>
-                    <span>专业版</span>
-                    <span>功能费：2688元/年</span>
-                    <span class="mfktBtn" p onclick="wind()">立即开通</span>
-                </p>
-                <ul>
-                    <li>付费内容载体：音频、视频</li>
-                    <li>付费形式：单节课、系列课</li>
-                    <li>运营管理：内容、用户关系、财务</li>
-                    <li>数据分析：营收趁势、用户活跃度等</li>
-                    <li>邀请卡</li>
-                    <li>评论互动</li>
-                    <li>首页名称自定义</li>
-                    <li>视频+语音直播</li>
-                    <li>用户定向推送</li>
-                    <li>闪电拉新</li>
-                </ul>
-            </div>
-        </div>
+        <ul>
+                <li class="color_1">
+                    <div class="service_top">
+                        <h5>基本版</h5>
+                        <p>功能费：0元／年</p>
+                        <a href="#">免费开通</a>
+                    </div>
+                    <div class="border">
+                        <span class="on">付费内容载体：音频、视频</span>
+                        <span class="on">付费形式：单节课、系列课</span>
+                        <span class="on">运营管理：内容、用户关系、财务</span>
+                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
+                        <span class="on">邀请卡</span>
+                        <span class="on">评论互动</span>
+                        <span class="on">首页名称自定义</span>
+                        <span class="on">视频+语音直播</span>
+                        <span class="not">用户定向推送</span>
+                        <span class="not">闪电拉新</span>
+                    </div>
+                </li>
+                <li class="color_2">
+                    <div class="service_top">
+                        <h5>专业版</h5>
+                        <p>功能费：3999元／年</p>
+                        <a href="#">立即开通</a>
+                    </div>
+                    <div class="border">
+                        <span class="on">付费内容载体：音频、视频</span>
+                        <span class="on">付费形式：单节课、系列课</span>
+                        <span class="on">运营管理：内容、用户关系、财务</span>
+                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
+                        <span class="on">邀请卡</span>
+                        <span class="on">评论互动</span>
+                        <span class="on">首页名称自定义</span>
+                        <span class="on">视频+语音直播</span>
+                        <span class="on">用户定向推送</span>
+                        <span class="on">闪电拉新</span>
+                    </div>
+                </li>
+                <li class="color_3">
+                    <div class="service_top">
+                        <h5>至尊版</h5>
+                        <p>功能费：8888元／年</p>
+                        <a href="#">立即开通</a>
+                    </div>
+                    <div class="border">
+                        <span class="on">付费内容载体：音频、视频</span>
+                        <span class="on">付费形式：单节课、系列课</span>
+                        <span class="on">运营管理：内容、用户关系、财务</span>
+                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
+                        <span class="on">邀请卡</span>
+                        <span class="on">评论互动</span>
+                        <span class="on">首页名称自定义</span>
+                        <span class="on">视频+语音直播</span>
+                        <span class="on">用户定向推送</span>
+                        <span class="on">闪电拉新</span>
+                    </div>
+                </li>
+            </ul>
     </div>
     <div style="clear: both;"></div>
     <a name="list_"></a>

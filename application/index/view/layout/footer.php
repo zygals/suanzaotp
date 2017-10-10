@@ -12,23 +12,36 @@
             <li>1V1竭诚服务</li>
         </ul>
     </div>
-    <div class="footcont">
+    <div class="footcont clearfix">
         <ul>
             <li>
                 <p>产品</p>
-                <span>开放平台</span>
-                <span>闪电拉新</span>
+                <a>开放平台</a>
+                <a>闪电拉新</a>
             </li>
             <li>
                 <p>公司</p>
-                <span>关于酸枣</span>
-                <span>最新动态</span>
+                <a>关于酸枣</a>
+                <a>最新动态</a>
             </li>
             <li>
                 <p>服务</p>
-                <span>使用指南</span>
-                <span>大V入驻</span>
-                <span>客户端下载</span>
+                <a>使用指南</a>
+                <a>大V入驻</a>
+                <a>客户端下载</a>
+            </li>
+            <li>
+                <p>友情链接</p>
+                <a>使用指南</a>
+                <a>大V入驻</a>
+                <a>客户端下载</a>
+                <a>服务</a>
+                <a>使用指南</a>
+                <a>大V入驻</a>
+                <a>客户端下载</a>
+                <a>服务</a>
+                <a>使用指南</a>
+                <a>大V入驻</a>
             </li>
         </ul>
         <div class="ewmPic">

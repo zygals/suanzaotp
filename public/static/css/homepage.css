@@ -59,18 +59,18 @@ body{ overflow-x:hidden}
 .box3 img{ margin-top:88px;}
 
 
-/** news **/
-.news{ overflow:hidden; margin-top:100px; padding:80px 0 100px 0; background:#f5f5f5;}
-.news h3{ color:#2b2c32; line-height:90px; font-size:46px; font-weight:normal; text-align:center;}
-.news h4{ text-align:center; font-size:18px; color:#2b2c32; font-weight:normal;}
-.news ul{ width:1330px; margin-top:50px; overflow:hidden;}
-.news ul li{ width:353px; float:left; margin-right:70px; }
-.news ul li h5{ line-height:36px; height:36px; font-weight:normal; font-size:24px; color:#2b2c32; overflow:hidden;}
-.news ul li span{ font-size:16px; width:120px; display:block; margin-top:5px; border-bottom:2px #d53c3e solid; padding-right:10px;}
-.news ul li span strong{ font-size:24px; color:#222; font-weight:normal;}
-.news ul li p{ line-height:30px; font-size:16px; margin-top:10px;}
-.news .more{ margin-top:70px;}
-.news .more a{ display:block; border-radius:5px; margin:0 auto; width:186px; height:46px; line-height:46px; text-align:center; background:#d53c3e; color:#FFF; font-size:14px;}
+/*!** news **!*/
+/*.news{ overflow:hidden; margin-top:100px; padding:80px 0 100px 0; background:#f5f5f5;}*/
+/*.news h3{ color:#2b2c32; line-height:90px; font-size:46px; font-weight:normal; text-align:center;}*/
+/*.news h4{ text-align:center; font-size:18px; color:#2b2c32; font-weight:normal;}*/
+/*.news ul{ width:1330px; margin-top:50px; overflow:hidden;}*/
+/*.news ul li{ width:353px; float:left; margin-right:70px; }*/
+/*.news ul li h5{ line-height:36px; height:36px; font-weight:normal; font-size:24px; color:#2b2c32; overflow:hidden;}*/
+/*.news ul li span{ font-size:16px; width:120px; display:block; margin-top:5px; border-bottom:2px #d53c3e solid; padding-right:10px;}*/
+/*.news ul li span strong{ font-size:24px; color:#222; font-weight:normal;}*/
+/*.news ul li p{ line-height:30px; font-size:16px; margin-top:10px;}*/
+/*.news .more{ margin-top:70px;}*/
+/*.news .more a{ display:block; border-radius:5px; margin:0 auto; width:186px; height:46px; line-height:46px; text-align:center; background:#d53c3e; color:#FFF; font-size:14px;}*/
 
 
 #footer{ width:100%; height:320px; background:#1a1c28; color:#969696;}
@@ -88,7 +88,7 @@ body{ overflow-x:hidden}
 
 
 .service{ overflow:hidden; margin-top:90px;}
-.service h3{ color:#2b2c32; line-height:90px; font-size:46px; font-weight:normal; text-align:center;}
+.service h3{ color:#2b2c32; line-height:90px; font-size:32px; font-weight:normal; text-align:center;}
 .service h4{ text-align:center; font-size:18px; color:#2b2c32; font-weight:normal;}
 .service ul{ margin-top:80px; width:1300px;}
 .service ul li{ width:386px; height:518px; float:left; margin-right:18px;}
