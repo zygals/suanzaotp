@@ -1,5 +1,5 @@
 {extend name='public:base' /}
-{block name="title"}修改管理员密码{/block}
+{block name="title"}修改超级管理员密码{/block}
 
 {block name="content"}
 <style>
@@ -13,7 +13,7 @@
         <div class="col-xs-8">
             <div class="text-center">
                 <!---->
-                <h4 class="modal-title" id="gridSystemModalLabel">修改管理员密码</h4>
+                <h4 class="modal-title" id="gridSystemModalLabel">修改超级管理员密码</h4>
             </div>
             <div class="">
                 <div class="container-fluid">
