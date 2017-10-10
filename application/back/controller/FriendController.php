@@ -113,10 +113,10 @@ class FriendController extends BaseController {
             $arr = $this->dealImg($file, $path_name);
             $data['logo'] = $arr['save_url_path'];
         }
-        if($data['type']==1){
+      /*  if($data['type']==1){
             $this->deleteImg($row_->logo);
             $data['logo']= '';
-        }
+        }*/
         if($this->saveById($data['id'],new Friend(),$data)){
 
             $this->success('编辑成功', $referer ,'', 1);

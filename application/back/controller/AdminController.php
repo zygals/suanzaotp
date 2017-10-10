@@ -11,7 +11,7 @@ class AdminController extends BaseController{
 	public function index(){
 		//not use layout.html
 
-		$list_admin = Admin::all(['status'=>1]);
+		$list_admin = Admin::all();
 
 		return $this->fetch('',['list_admin'=>$list_admin]);
 	}
@@ -57,9 +57,17 @@ class AdminController extends BaseController{
 		session(null);
 		$this->redirect('login');
 	}
+    public function create(){
+
+        return $this->fetch('');
+    }
 	public function edit(){
 
 	    return $this->fetch('');
+    }
+    public function edit_(){
+
+        return $this->fetch('');
     }
     public function update(Request $request){
         $data = $request->param();
