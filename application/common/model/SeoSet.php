@@ -7,7 +7,7 @@ use think\Model;
 class SeoSet extends Model {
 
     public function getNavIdAttr($value) {
-        $status = [ 1 => '首页', 2 => '产品体验',3 => '直播案例',4 => '直播间后台',5 => '购买服务', 6 => '最新动态', 7=> '关于我们'];
+        $status = [ 1 => '首页', 2 => '新闻资讯',3 => '直播案例',4 => '直播间后台',5 => '购买服务', 6 => '直播案例', 7=> '关于我们'];
         return $status[$value];
     }
  /*   public function getNavId($value){
@@ -42,7 +42,7 @@ class SeoSet extends Model {
             ],
             3 => (object)[
                 'id'=>3,
-                'name' => '直播案例',
+                'name' => '新闻资讯',
             ],
             4 => (object)[
                 'id'=>4,
@@ -54,7 +54,7 @@ class SeoSet extends Model {
             ],
             6 => (object)[
                 'id'=>6,
-                'name' => '最新动态',
+                'name' => '直播案例',
             ],
             7 => (object)[
                 'id'=>7,

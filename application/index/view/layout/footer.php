@@ -40,21 +40,17 @@
             <p>华龙股份 股票代码 870893</p>
         </div>
     </div>
+    <?php if(request()->controller()=='Index' && request()->action()=='index'){?>
     <div class="friend">
         <p>友情链接:</p>
         <ul class="clearfix">
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
-            <li><a>微信公众号</a></li>
+            <?php foreach ($list_friend as $row_){?>
+            <li><a href="{$row_->url}" target="_blank">{$row_->name}</a></li>
+           <?php }?>
         </ul>
     </div>
+    <?php }?>
+
     <div class="download">
         <h4>App下载</h4>
         <a href="{:url('index/downfile')}?path={$row_file_apple->path}">

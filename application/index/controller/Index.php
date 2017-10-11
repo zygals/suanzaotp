@@ -15,15 +15,17 @@ class Index extends Base {
         $cate_id = 0;
 
         $list_ad = Ad::getAdsByPosition(1);
-        $list_cate = Cate::getList(['tp'=>1]);
+        $list_cate = Cate::getList(['tp'=>1,'paixu'=>'sort']);
         $list_news = Article::getList(['tp'=>1,'paixu'=>'sort','index_show'=>['<>',1]], ['article.st' => 1], 4);
         $row_news = Article::getList(['tp'=>1,'index_show'=>1,'paixu'=>'update_time','sort_type'=>'desc'], ['article.st' => 1], 1);
         if(count($row_news)==0){
             $row_news=Article::getList(['paixu'=>'sort'], ['article.st' => 1], 1);
         }
+
+        $list_friend = Friend::getList();
 //        dump($row_news);exit;
         $seo = SeoSet::getSeoByNavId(1);
-        return $this->fetch('', compact('list_ad', 'list_cate', 'list_news', 'row_news','cate_id','seo'));
+        return $this->fetch('', compact('list_ad', 'list_cate', 'list_news', 'row_news','cate_id','list_friend','seo'));
     }
     public function read_new(Request $request){
         $data = $request->param();
