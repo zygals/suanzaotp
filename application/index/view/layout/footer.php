@@ -30,19 +30,6 @@
                 <a>大V入驻</a>
                 <a>客户端下载</a>
             </li>
-            <li>
-                <p>友情链接</p>
-                <a>使用指南</a>
-                <a>大V入驻</a>
-                <a>客户端下载</a>
-                <a>服务</a>
-                <a>使用指南</a>
-                <a>大V入驻</a>
-                <a>客户端下载</a>
-                <a>服务</a>
-                <a>使用指南</a>
-                <a>大V入驻</a>
-            </li>
         </ul>
         <div class="ewmPic">
             <div class="ewmPic-pig"></div>
@@ -52,6 +39,21 @@
             <p>联系方式：400-876-8756</p>
             <p>华龙股份 股票代码 870893</p>
         </div>
+    </div>
+    <div class="friend">
+        <p>友情链接:</p>
+        <ul class="clearfix">
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+            <li><a>微信公众号</a></li>
+        </ul>
     </div>
     <div class="download">
         <h4>App下载</h4>

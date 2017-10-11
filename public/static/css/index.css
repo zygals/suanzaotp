@@ -612,7 +612,7 @@
 .ewmPic{
 	float: left;
 	margin-top: 60px;
-	margin-left: 120px;
+	margin-left: 280px;
 }
 .ewmPic .ewmPic-pig{
 	width: 110px;
@@ -1076,4 +1076,119 @@
 .listBox {
     width: 1240px;
     margin:0 auto;
+}
+
+.friend {
+    width: 1200px;
+    margin:0 auto;
+    padding:50px 0;
+}
+
+.friend p {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 20px;
+}
+.friend ul li {
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.friend ul li a {
+    color: #7e7f80;
+    line-height: 24px;
+}
+
+.friend ul li a:hover {
+    text-decoration: underline;
+}
+
+.news-cont {
+    text-align: left;
+    margin-top: 30px;
+    width: 1200px;
+    margin:0 auto;
+}
+
+.news-title {
+    position: relative;
+}
+.news-title img {
+    width: 1200px   ;
+}
+.news-title li {
+    float: left;
+    font-size: 18px;
+    margin-right: 60px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.news-active {
+    color: #fff;
+    background-color: #1e86df;
+    z-index: 99;
+}
+
+
+.news-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.left-news {
+    vertical-align: middle;
+}
+.left-news img{
+    float: left;
+    margin-top: 2px;
+}
+
+.left-news p {
+    margin-left: 25px;
+    color: #333;
+}
+
+.left-news p:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    width: 20%;
+    margin:50px auto;
+}
+
+.pagination span {
+    padding: 2px 7px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #ccc;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination a {
+    padding:0 20px;
+    color: #000;
+    font-size: 16px;
+}
+
+.pagination .p-active {
+    color: #1e86df;
+}
+.pagination a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pagination span:hover {
+    background-color: #333;
+    border: 1px solid #333;
 }
