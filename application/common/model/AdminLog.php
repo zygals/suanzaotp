@@ -5,7 +5,8 @@ use think\Model;
 
 class AdminLog extends model{
 	public static function getLogs(){
-	    $list_ = self::where('')->alias('al')->order('create_time desc')->join('admin','al.admin_id=admin.id')->field('admin.name admin_name,times,al.*')->paginate();
+        $admin_id=session('admin_suanzao')->id;
+	    $list_ = self::where(['admin_id'=>$admin_id])->alias('al')->order('create_time desc')->join('admin','al.admin_id=admin.id')->field('admin.name admin_name,times,al.*')->paginate();
 	    return $list_;
     }
     public function addLog($admin_id,$user_ip){

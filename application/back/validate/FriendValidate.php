@@ -5,14 +5,14 @@ use think\Validate;
 
 class FriendValidate extends Validate{
 	protected $rule = [
-        'type'=>'require',
+        'name'=>'require',
 		'url' =>  'url',
 
 
 
 	];
 	protected $message  =   [
-        'type'   => 'type 不能为空',
+        'name'   => 'name 不能为空',
 		'url'   => '链接不合法',
 
 

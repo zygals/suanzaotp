@@ -1,5 +1,6 @@
 <?php
 namespace app\back\controller;
+use app\common\model\MenuAdmin;
 use think\Controller;
 use think\Request;
 
@@ -21,8 +22,25 @@ class BaseController extends Controller {
 			if(!session('admin_suanzao') && !in_array($current_request,$not_logins)){
 				$this->redirect("admin/login");
 			}
+			if(!empty(session('admin_suanzao')) && session('admin_suanzao')->type=='一般'){
+                $my_power = MenuAdmin::getListNormal();
+                $is_have_power = false;
+                foreach ($my_power as $power){
+                    $power_str = strtolower($power->controller).'/'.$power->action;
 
-		}
+                    if($power_str==$current_request || strtolower($power->controller)==strtolower($request->controller()) || $current_request=='admin/sigin' ||$current_request=='index/index'){
+                        $is_have_power=true;
+                        break;
+                    }
+                }
+                if($is_have_power==false){
+                    $this->error('您没有此权限');
+                }
+            }
+
+
+
+        }
 
 
 		public function findById($id,$model){

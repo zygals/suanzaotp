@@ -11,10 +11,10 @@ class Friend extends model {
         $status = [0 => 'deleted', 1 => '正常', 2 => '不显示'];
         return $status[$value];
     }
-    public function getTypeAttr($value) {
+ /*   public function getTypeAttr($value) {
         $status = [ 1 => '友情链接', 2 => '战略合作'];
         return $status[$value];
-    }
+    }*/
 
     public static function getList($data=[]) {
         $where = ['st' => ['<>',0]];

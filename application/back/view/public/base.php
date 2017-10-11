@@ -60,26 +60,22 @@
 <div id="wrap" style="height:2000px;">
     <!-- 左侧菜单栏目块 -->
     {block name="menu_left"}
-    <?php $list_first_menu = \app\common\model\MenuAdmin::getList() ?>
+
     <div class="leftMeun" id="leftMeun">
         <div id="logoDiv">
             欢迎使用后台
             <p id="userName">{php} if(session('admin_suanzao'))echo session('admin_suanzao')->name{/php} <a
                         href="{:Url('admin/logout')}">&nbsp;&nbsp;&nbsp;&nbsp;退出登录</a></p>
-           <!-- <p id="logoP">
 
-                <a href="{:url('index/clear_cache')}">
-                    <button class="alert btn-xs">清理前台缓存</button>
-                </a>
-            </p>-->
         </div>
         <div id="personInfor">
-            <!--<p id="userName">{php} if(session('admin_suanzao'))echo session('admin_suanzao')->name{/php} <a
-                        href="{:Url('admin/logout')}">&nbsp;&nbsp;&nbsp;&nbsp;退出登录</a></p>-->
+
             <p><a href="{:Url('index/index/index')}" target="_blank">前台</a></p>
-<!--        <p><a href="{:Url('menu_admin/index')}">管理菜单</a></p>-->
+
             <p><a href="{:Url('index/index')}">登录日志</a></p>
         </div>
+        <?php if(session('admin_suanzao')->type=='超级') {
+            $list_first_menu = \app\common\model\MenuAdmin::getList(); ?>
         <?php foreach ($list_first_menu as $k => $row_first_menu) { ?>
             <div class="meun-title">{$row_first_menu->name}</div>
             <?php foreach ($row_first_menu['childs'] as $k2 => $row_menu) { ?>
@@ -90,6 +86,16 @@
                                 src="__PUBLIC__/images/icon_user_grey.png">{$row_menu->name}</a></div>
             <?php } ?>
         <?php } ?>
+        <?php }else{ $list_menu = \app\common\model\MenuAdmin::getListNormal();?>
+            <div class="meun-title">我的管理</div>
+            <?php foreach ($list_menu as $k2 => $row_menu) { ?>
+                <div class="meun-item <?php
+                if (request()->controller() == $row_menu->controller && request()->action() == $row_menu->action )echo 'meun-item-active ';
+                ?>">
+                    <a href="<?php echo Url($row_menu->controller . '/' . $row_menu->action, $row_menu->param) ?>"><img
+                                src="__PUBLIC__/images/icon_user_grey.png">{$row_menu->name}</a></div>
+            <?php } ?>
+        <?php }?>
         <p style="color:white;margin-top:30px;text-align:left;">@weilaihexun</p>
 
     </div>
