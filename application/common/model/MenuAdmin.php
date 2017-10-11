@@ -14,6 +14,16 @@ class MenuAdmin extends model {
 
         return $list_first;
     }
+    //
+    public static function getListNormal(){
+        $list_first = self::where(['id' => ['in',session('admin_suanzao')->privilege]])->order('sort asc')->select();
+        return $list_first;
+    }
+    public static function getPower(){
+       $list_ =  self::where(['pid' => ['<>',0]])->order('sort asc')->select();
+
+        return $list_;
+    }
     public function getName($pid){
         return $pid==0?'一级':$this->where('id',$pid)->value('name');
     }

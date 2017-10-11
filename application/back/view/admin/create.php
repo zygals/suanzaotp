@@ -15,53 +15,42 @@
 				<div class="">
 					<div class="container-fluid">
 							<div class="form-group ">
-                                <label for="sName" class="col-xs-3 control-label">账号：</label>
+                                <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>账号：</label>
 								<div class="col-xs-8 ">
 									<input type="text" class="form-control input-sm duiqi" name='name' value="" id="" placeholder="">
 								</div>
 							</div>
-
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>密码：</label>
+                            <div class="col-xs-8 ">
+                                <input type="password" required class="form-control input-sm duiqi" name='pass' value="" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>重复密码：</label>
+                            <div class="col-xs-8 ">
+                                <input type="password" required class="form-control input-sm duiqi" name='repass'
+                                       value="" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label">姓名：</label>
+                            <div class="col-xs-8 ">
+                                <input type="text" class="form-control input-sm duiqi" name='truename' value="" id="" placeholder="">
+                            </div>
+                        </div>
                             <div class="form-group">
-                                <label for="sKnot" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>位置：</label>
+                                <label for="sKnot" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>权限：</label>
                                 <div class="col-xs-8">
-                                    <select onchange="changePix(this)" class=" form-control select-duiqi" name="position" id="">
-                                   <!--     <option value="">--请选择--</option>-->
-                                        <?php foreach ($list_position as $k=>$category){if($category->id > 30)break;?>
-                                        <option pic_width="{$category->width}" pic_height="{$category->height}" value="{$category->id}" ">{$category->name}</option>
+
+                                        <?php foreach ($list_power as $k=>$row_p){?>
+                                            <label class="control-label" >
+                                                <input type="checkbox" name="privilege[]" value="{$row_p->id}" >{$row_p->name}</label> &nbsp;
 <?php }?>
-                                    </select>
+
 
                                 </div>
                             </div>
-
-                        <div class="form-group">
-                            <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>广告图：</label>
-                            <div class="col-xs-4 ">
-                                <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span style="color:red">尺寸要求（<b id="pix_require">1290*560</b>），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。</span>
-                            </div>
-
-                        </div>
-                        <div class="form-group ">
-                            <label for="sName" class="col-xs-3 control-label">图片链接：</label>
-                            <div class="col-xs-8 ">
-                                <input type="text" class="form-control input-sm" name='url' value="" id="" placeholder="请添加开头有http://" >
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="situation" class="col-xs-3 control-label">打开新窗口：</label>
-                            <div class="col-xs-8">
-                                <label class="control-label" >
-                                    <input type="radio" name="new_window" id="" value="1" >是</label> &nbsp;
-                                <label class="control-label">
-                                    <input type="radio" name="new_window" id="" value="0" checked> 否</label>
-                            </div>
-                        </div>
-                       <!-- <div class="form-group " style="display:block" id="word_index_banner">
-                            <label for="sName" class="col-xs-3 control-label">描述：</label>
-                            <div class="col-xs-8 ">
-                                <textarea  name="word" style="width:700px;height:300px;"></textarea>
-                            </div>
-                        </div>-->
 
 				</div>
 				<div class="text-center">
@@ -75,37 +64,46 @@
 </form>
 
 <script>
-    function changePix(obj){
-        if(obj.value==1 || obj.value==10){
-            $('#word_index_banner').show();
-        }else{
-            $('#word_index_banner').hide();
-        }
-        var pic_width = $(obj).find('option:selected').attr("pic_width");
-        var pic_height = $(obj).find('option:selected').attr('pic_height');
-        $('#pix_require').html(pic_width +'*'+pic_height);
 
-    }
     $(function () {
         $('form').bootstrapValidator({
             fields: {
-                position: {
+                name: {
                     validators: {
                         notEmpty: {
-                            message: '请选择位置'
+                            message: '不能为空'
+                        }
+
+
+                    }
+                },
+                pass: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
+                        }
+
+
+                    }
+                }, repass: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
+                        }
+
+
+                    }
+                },
+                privilege: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
                         }
 
 
                     }
                 },
 
-                img: {
-                    validators: {
-                        notEmpty: {
-                            message: '请添加广告图'
-                        }
-                    }
-                }
 
             }
         });

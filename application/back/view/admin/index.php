@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <form method="post" action="{:Url('admin/del')}">
+                    <form method="post" action="{:Url('admin/delete')}">
                         <input type="hidden" name="id" value="" id="del_id" />
                         <button type="button" class="btn btn-xs btn-white" data-dismiss="modal">取 消</button>
                         <button type="submit" class="btn btn-xs btn-danger">确 定</button>
@@ -142,20 +142,7 @@
         });
 
     });
-    $('.update_').bind('click',function () {
-        var id = $(this).attr('data-id');
-        $.post('<?php echo url('admin/update')?>',{id:id},function(data){
-            if(data.code!=0){
-                alert(data.msg);
-            }else{
-//                alert(data.row.name)
-                $('#form_u').find('#u_name').val(data.row.name);
-                $('#form_u').find('#u_id').val(data.row.id);
 
-
-            }
-        });
-    });
     //delete
     $('.del_').bind('click',function () {
         var id = $(this).attr('data-id');
