@@ -14,7 +14,7 @@
 			<form method="get" action="{:url('index')}">
 			<select name="position" style="color:inherit">
 				<option value="">--请选择位置--</option>
-                <?php foreach($list_position as $category){if($category->id > 30)break;?>
+                <?php foreach($list_position as $category){?>
 				<option value="{$category->id}"  {eq name="Think.get.position" value="$category->id"}selected{/eq}>{$category->name}</option>
                 <?php }?>
 			</select>

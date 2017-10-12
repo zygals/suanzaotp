@@ -2,6 +2,19 @@
 <!-- 头部 -->
 {include file="layout/nav"}
 
+<div class="banner">
+    <ul class="banner_box">
+        <?php foreach($list_ad as $row_){?>
+            <li style="opacity: 1;filter:alpha(opacity=100);">
+                <a   <?php echo \app\common\model\Ad::urlOpen($row_->url,$row_->new_window)?>  style="background:url(__IMGURL__{$row_->img}) center top no-repeat">
+
+                </a>
+            </li>
+        <?php }?>
+
+
+    </ul>
+</div>
 <!-- service -->
 <div class="service w1200">
     <h3>多种版本供您选择</h3>

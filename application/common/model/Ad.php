@@ -17,7 +17,7 @@ class Ad extends model {
     }
 
     public function getPositionAttr($value) {
-        $status = [1 => '首页', 2 => '产品体验', 3 => '购买服务', 4 => '最新动态', 5 => '关于我们'
+        $status = [1 => '首页', 2 => '产品体验', 3 => '新闻资讯', 4 => '购买服务', 5 => '直播案例', 6 => '关于我们'
         ];
         return $status[$value];
     }
@@ -65,31 +65,37 @@ class Ad extends model {
                 'id' => 1,
                 'name' => '首页',
                 'width' => '1920',
-                'height' => '670',
+                'height' => '560',
             ],
             2 => (object)[
                 'id' => 2,
                 'name' => '产品体验',
                 'width' => '1920',
-                'height' => '554',
+                'height' => '560',
             ],
             3 => (object)[
                 'id' => 3,
-                'name' => '购买服务',
+                'name' => '新闻资讯',
                 'width' => '1920',
-                'height' => '554',
+                'height' => '560',
             ],
             4 => (object)[
                 'id' => 4,
-                'name' => '最新动态',
+                'name' => '购买服务',
                 'width' => '1920',
-                'height' => '554',
+                'height' => '560',
             ],
             5 => (object)[
                 'id' => 5,
+                'name' => '直播案例',
+                'width' => '1920',
+                'height' => '560',
+            ],
+            6 => (object)[
+                'id' => 6,
                 'name' => '关于我们',
                 'width' => '1920',
-                'height' => '223',
+                'height' => '560',
             ],
 
 

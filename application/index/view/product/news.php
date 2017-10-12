@@ -1,3 +1,15 @@
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <?php foreach ($list_ad as $row_) { ?>
+            <div class="swiper-slide"><a <?= \app\common\model\Ad::urlOpen($row_->url, $row_->new_window) ?>><img
+                            src="__IMGURL__{$row_->img}" alt="暂无图片"></a></div>
+        <?php } ?>
+
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination defined-pag"></div>
+</div>
 <div class="show-anli">
     <h2>新闻资讯</h2>
     <div class="news-cont">

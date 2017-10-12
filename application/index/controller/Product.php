@@ -20,15 +20,16 @@ class Product extends Base {
     public function service() {
         $this->view->engine->layout(false);
         $seo = SeoSet::getSeoByNavId(5);
-        return $this->fetch('', ['seo' => $seo]);
+        $list_ad = Ad::getAdsByPosition(4);
+        return $this->fetch('', ['seo' => $seo,"list_ad"=>$list_ad]);
     }
 
     public function news() {
         $list_cate = Cate::getList(['tp' => 1, 'paixu' => 'sort']);
         $list_news = Article::getList([ 'tp' => 1], ['article.st' => 1]);
-
+        $list_ad = Ad::getAdsByPosition(3);
         $seo = SeoSet::getSeoByNavId(3);
-        return $this->fetch('', ['seo' => $seo, 'list_cate' => $list_cate, 'list_news' => $list_news]);
+        return $this->fetch('', ['seo' => $seo,  'list_ad' => $list_ad,'list_cate' => $list_cate, 'list_news' => $list_news]);
     }
 
     public function houtai() {

@@ -18,7 +18,7 @@ class Anli extends Base {
     }
 
     public function index() {
-        $list_ad = Ad::getAdsByPosition(4);
+        $list_ad = Ad::getAdsByPosition(5);
        $list_anli = Article::getList(['tp'=>2],['article.st'=>1]);
        $list_cate = Cate::getList(['tp'=>2]);
         $seo = SeoSet::getSeoByNavId(6);

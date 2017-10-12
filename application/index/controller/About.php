@@ -19,7 +19,7 @@ class About extends Base
 
     public function index()
     {
-        $list_ad = Ad::getAdsByPosition(5);
+        $list_ad = Ad::getAdsByPosition(6);
         $seo = SeoSet::getSeoByNavId(7);
         return $this->fetch('',['list_ad'=>$list_ad,'seo'=>$seo]);
     }
