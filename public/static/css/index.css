@@ -822,9 +822,7 @@
    font-size: 16px;
 }
 .news {
-    width: 50%;
     margin:20px auto;
-    text-align: center;
 }
 .news li{
     float: left;
@@ -836,9 +834,6 @@
     cursor: pointer;
 }
 
-.news li:last-child {
-    margin-right: 0px;
-}
 .news li:hover {
     background-color: #1a1c28;
     color: #fff;

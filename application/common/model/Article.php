@@ -23,7 +23,7 @@ class Article extends Base {
         return $status[$value];
     }
 
-    public static function getList($data = [], $where = ['article.st' => ['<>', 0]], $limit = 0) {
+    public static function getList($data = [], $where = ['article.st' => ['<>', 0]], $limit = 0,$perPage=10) {
         $filed = 'article.*,cate.name cate';
         $order = "article.create_time desc";
         if (!empty($data['cate_id'])) {
@@ -56,7 +56,7 @@ class Article extends Base {
             $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->limit($limit)->order($order)->select();
         } else {
 
-            $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->order($order)->paginate(12);
+            $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->order($order)->paginate($perPage);
         }
 
         return $list_;

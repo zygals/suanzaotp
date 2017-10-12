@@ -26,7 +26,7 @@ class Product extends Base {
 
     public function news() {
         $list_cate = Cate::getList(['tp' => 1, 'paixu' => 'sort']);
-        $list_news = Article::getList([ 'tp' => 1], ['article.st' => 1]);
+        $list_news = Article::getList([ 'tp' => 1], ['article.st' => 1],0,15);
         $list_ad = Ad::getAdsByPosition(3);
         $seo = SeoSet::getSeoByNavId(3);
         return $this->fetch('', ['seo' => $seo,  'list_ad' => $list_ad,'list_cate' => $list_cate, 'list_news' => $list_news]);
