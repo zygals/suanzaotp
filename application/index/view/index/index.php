@@ -27,11 +27,12 @@
                 </li>
                 <li>
                     <img src="__STATIC__img/sharebg.png" alt="">
-                    <p class="p-one">闪电拉新，快速获取海量新粉丝<br>让直播收益暴涨！</p>
+                    <p class="p-one">基础直播服务+定向推送服务，<br>帮助您的微信公众号快速增收涨粉</p>
                     <div class="pos pos-bottom">
                         <img src="__STATIC__img/share.png" alt="">
-                        <p>无需下载APP邀请卡</p>
-                        <p>一键分享</p>
+                        <p>分享，将价值传播更远，
+                        <p>推广效果尽在掌握！
+<!--                        <p>一键分享</p>-->
                     </div>
                 </li>
                 <li>
@@ -212,7 +213,7 @@
                         <span class="on">首页名称自定义</span>
                         <span class="on">视频+语音直播</span>
                         <span class="not">用户定向推送</span>
-                        <span class="not">闪电拉新</span>
+                        <span class="not">定时直播，随时回放</span>
                     </div>
                 </li>
                 <li class="color_2">
@@ -231,7 +232,7 @@
                         <span class="on">首页名称自定义</span>
                         <span class="on">视频+语音直播</span>
                         <span class="on">用户定向推送</span>
-                        <span class="on">闪电拉新</span>
+                        <span class="on">定时直播，随时回放</span>
                     </div>
                 </li>
                 <li class="color_3">
@@ -250,7 +251,7 @@
                         <span class="on">首页名称自定义</span>
                         <span class="on">视频+语音直播</span>
                         <span class="on">用户定向推送</span>
-                        <span class="on">闪电拉新</span>
+                        <span class="on">定时直播，随时回放</span>
                     </div>
                 </li>
             </ul>

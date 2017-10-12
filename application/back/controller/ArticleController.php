@@ -65,20 +65,33 @@ class ArticleController extends BaseController {
         if($data['tp']==1 && empty($data['charm'])){
             $this->error('请添加摘要！');
         }
-        $file = $request->file('img');
 
+        $file = $request->file('img');
         if (empty($file)) {
             $this->error('请上传图片或检查图片大小！');
         }
-
         $size = $file->getSize();
         if ($size > config('upload_size')) {
             $this->error('图片大小超过限定！');
         }
-
         $path_name = 'article';
         $arr = $this->dealImg($file, $path_name);
         $data['img'] = $arr['save_url_path'];
+
+        if($data['tp']==2){
+            $file = $request->file('img_erwei');
+            if (empty($file)) {
+                $this->error('请上传二维码图片或检查图片大小！');
+            }
+            $size = $file->getSize();
+            if ($size > config('upload_size')) {
+                $this->error('图片大小超过限定！');
+            }
+            $path_name = 'article';
+            $arr = $this->dealImg($file, $path_name);
+            $data['img_erwei'] = $arr['save_url_path'];
+        }
+
         $Article = new Article();
         $Article->save($data);
         $this->success('添加成功', 'index', '', 1);
@@ -118,8 +131,8 @@ class ArticleController extends BaseController {
         }
         $row_ = $this->findById($data['id'],new Article());
         $file = $request->file('img');
+        $path_name = 'article';
         if(!empty($file)){
-            $path_name = 'article';
             $size = $file->getSize();
             if ($size > config('upload_size') ) {
                 $this->error('图片大小超过限定！');
@@ -127,6 +140,17 @@ class ArticleController extends BaseController {
             $this->deleteImg($row_->img);
             $arr = $this->dealImg($file, $path_name);
             $data['img'] = $arr['save_url_path'];
+        }
+
+        $file = $request->file('img_erwei');
+        if(!empty($file)){
+            $size = $file->getSize();
+            if ($size > config('upload_size') ) {
+                $this->error('图片大小超过限定！');
+            }
+            $this->deleteImg($row_->img_erwei);
+            $arr = $this->dealImg($file, $path_name);
+            $data['img_erwei'] = $arr['save_url_path'];
         }
         $data['update_time'] = time();
         if($this->saveById($data['id'],new Article(),$data)){

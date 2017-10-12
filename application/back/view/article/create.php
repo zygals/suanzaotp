@@ -61,13 +61,22 @@
                             <input type="text" class="form-control input-sm " name='name' value="" id="" placeholder="">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>缩略图：</label>
                         <div class="col-xs-4 ">
                             <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span
                                     style="color:red">尺寸要求（<b
                                         id="size_tip">476*298</b>），大小不超过<?php echo floor(config('upload_size') / 1024 / 1024); ?>
+                                M。</span>
+                        </div>
+
+                    </div>
+                    <div class="form-group" id="erwei_div" style="display: none;">
+                        <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>二维码：</label>
+                        <div class="col-xs-4 ">
+                            <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img_erwei" placeholder=""><span
+                                    style="color:red">尺寸要求（<b
+                                        id="size_tip">300*300</b>），大小不超过<?php echo floor(config('upload_size') / 1024 / 1024); ?>
                                 M。</span>
                         </div>
 
@@ -127,9 +136,11 @@
         if (tp == 1) {
             $('#size_tip').html('476*298');
             $('#charm_area').show();
+            $('#erwei_div').hide();
         } else {
             $('#size_tip').html('360*215');
             $('#charm_area').hide();
+            $('#erwei_div').show();
         }
         $.ajax({
             url: "{:url('cate/ajax_get_cate')}",

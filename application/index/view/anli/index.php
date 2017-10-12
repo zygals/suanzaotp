@@ -1,3 +1,28 @@
+<style>
+    .show-list li {
+        position: relative;
+    }
+
+    .show-list li:hover .mask-wrap {
+        opacity: 1;
+        transition: all .5s ease-out;
+    }
+
+    .mask-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: rgba(0,0,0,0.8);
+    }
+    .mask-wrap img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20%;
+    }
+</style>
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <?php foreach ($list_ad as $row_) { ?>
@@ -25,6 +50,9 @@
                 <li>
                     <a href="{:url('index/read_new')}?id={$row_->id}">
                         <img src="__IMGURL__{$row_->img}" alt="">
+                        <div class="mask-wrap">
+                            <img src="__IMGURL__{$row_->img_erwei}" alt="二维码">
+                        </div>
                         <p>{$row_->name}</p>
                     </a>
                 </li>
@@ -76,6 +104,7 @@
                     for (var i = 0; i < list_news.length; i++) {
                         str += '  <li><a href="{:url(\'index/read_new\')}?id=' + list_news[i].id + '">';
                         str += ' <img src="__IMGURL__' + list_news[i].img + '" alt="">';
+                        str+='<div class="mask-wrap"><img src="__IMGURL__' + list_news[i].img_erwei + '" alt="二维码"></div>';
                         str += '<p>' + list_news[i].name + '</p></a> </li>';
 
                     }

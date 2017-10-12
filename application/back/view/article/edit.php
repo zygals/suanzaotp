@@ -87,6 +87,15 @@
                                     <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span style="color:red">尺寸要求（240*140），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。不选择表示不修改。</span>
                                 </div>
                         </div>
+
+                        <div class="form-group" id="erwei_div"  style="display: <?= $row_->tp=='案例'?'block':'none'?>;">
+                            <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>二维码：</label>
+                            <div class="col-xs-4 ">
+                                <img src="__IMGURL__{$row_->img_erwei}" alt="没有上传图片" width="100"/>
+                                <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img_erwei" placeholder=""><span style="color:red">尺寸要求（300*300），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。不选择表示不修改。</span>
+                            </div>
+                        </div>
+
                         <div class="form-group ">
                             <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>内容：</label>
                             <div class="col-xs-8 ">
@@ -195,9 +204,11 @@
         if (tp == 1) {
             $('#size_tip').html('476*298');
             $('#charm_area').show();
+            $('#erwei_div').hide();
         } else {
             $('#size_tip').html('360*215');
             $('#charm_area').hide();
+            $('#erwei_div').show();
         }
         $.ajax({
             url: "{:url('cate/ajax_get_cate')}",

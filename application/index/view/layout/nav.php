@@ -49,7 +49,7 @@
                 </ul>
             </li>
             <li><a href="{:url('product/news')}" style="<?php if(request()->controller()=='Product' && request()->action()=='news'){?>color:rgb(32,112,251);<?php }?>">新闻资讯</a></li>
-            <li><a href="https://suanzao.llkeji.com/pc/login">直播间后台</a></li>
+            <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">直播间后台</a></li>
             <li><a href="{:url('product/service')}" style="<?php if(request()->controller()=='Product'&& request()->action()=='service'){?>color:rgb(32,112,251);<?php }?>">购买服务</a></li>
             <li><a href="{:url('anli/index')}" style="<?php if(request()->controller()=='Anli'){?>color:rgb(32,112,251);<?php }?>">直播案例</a></li>
             <li><a href="{:url('about/index')}" style="<?php if(request()->controller()=='About'){?>color:rgb(32,112,251);<?php }?>">关于我们</a></li>
