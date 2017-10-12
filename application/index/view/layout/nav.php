@@ -5,7 +5,6 @@
     }
     .father .child {
         position: absolute;
-        width: 134px;
         margin:0 auto;
         height: 0;
         left:0;
@@ -14,17 +13,22 @@
     }
     .father .child a {
         text-align: center;
-        margin-left: 10px;
     }
 
     .father .child li {
-        opacity: 1;
-    }
-    .father:hover ul{
-        height: 240px;
-        overflow: visible;
+        float: none;
+        opacity: 0;
         background-color: #000;
         transition: all .3s;
+    }
+
+    .father .child li:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
+    .father:hover ul{
+        overflow: visible;
     }
     .father:hover ul li {
         opacity: 1;
