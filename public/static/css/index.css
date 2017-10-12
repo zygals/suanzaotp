@@ -1193,3 +1193,11 @@
     background-color: #333;
     border: 1px solid #333;
 }
+#btn_more{
+	width: 10%;
+	padding: 10px 0;
+	margin: 0 auto;
+	display: block;
+	border-radius: 40%;
+	letter-spacing: 3px;
+}

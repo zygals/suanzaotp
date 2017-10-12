@@ -128,6 +128,7 @@ class ArticleController extends BaseController {
             $arr = $this->dealImg($file, $path_name);
             $data['img'] = $arr['save_url_path'];
         }
+        $data['update_time'] = time();
         if($this->saveById($data['id'],new Article(),$data)){
 
             $this->success('编辑成功', $referer, '', 1);

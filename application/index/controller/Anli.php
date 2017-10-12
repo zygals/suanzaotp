@@ -19,11 +19,15 @@ class Anli extends Base {
 
     public function index() {
         $list_ad = Ad::getAdsByPosition(4);
-       $list_anli = Article::getList(['tp'=>2,'paixu'=>'sort'],['article.st'=>1]);
+       $list_anli = Article::getList(['tp'=>2],['article.st'=>1]);
        $list_cate = Cate::getList(['tp'=>2]);
         $seo = SeoSet::getSeoByNavId(6);
-//        dump($list_anli);exit;
-        return $this->fetch('', compact('list_ad','list_anli','list_cate','seo'));
+        $currentPage = $list_anli->currentPage();
+        $lastPage = $list_anli->lastPage();
+     /*dump($list_anli->currentPage());
+     dump($list_anli->lastPage());
+     exit;*/
+        return $this->fetch('', compact('list_ad','list_anli','currentPage','lastPage','list_cate','seo'));
     }
 
     public function ajax_anli(Request $request){
@@ -32,7 +36,7 @@ class Anli extends Base {
         if (isset($data['cate_id']) && !empty($data['cate_id'])) {
             $cate_id = $data['cate_id'];
         }
-        $list_news = Article::getList(['tp'=>2,'cate_id' => $cate_id,'paixu'=>'sort'], ['article.st' => 1]);
+        $list_news = Article::getList(['tp'=>2,'cate_id' => $cate_id,], ['article.st' => 1]);
         if(count($list_news)>0){
 
             return json(['code'=>0,'data'=>compact('list_news')]);

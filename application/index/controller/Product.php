@@ -25,7 +25,7 @@ class Product extends Base {
 
     public function news() {
         $list_cate = Cate::getList(['tp' => 1, 'paixu' => 'sort']);
-        $list_news = Article::getList(['paixu' => 'sort', 'tp' => 1], ['article.st' => 1]);
+        $list_news = Article::getList([ 'tp' => 1], ['article.st' => 1]);
 
         $seo = SeoSet::getSeoByNavId(3);
         return $this->fetch('', ['seo' => $seo, 'list_cate' => $list_cate, 'list_news' => $list_news]);
@@ -42,7 +42,7 @@ class Product extends Base {
         if (isset($data['cate_id']) && !empty($data['cate_id'])) {
             $cate_id = $data['cate_id'];
         }
-        $list_news = Article::getList(['tp' => 1, 'cate_id' => $cate_id, 'paixu' => 'sort'], ['article.st' => 1]);
+        $list_news = Article::getList(['tp' => 1, 'cate_id' => $cate_id], ['article.st' => 1]);
         if (count($list_news) > 0) {
 
             return json(['code' => 0, 'data' => compact('list_news')]);

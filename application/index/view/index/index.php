@@ -292,7 +292,7 @@
         </ul>
         <div class="new-cont">
             <ul class="left-news" id="left_news">
-                <?php foreach ($list_news as $k => $row_) {?>
+                <?php foreach ($list_news_index as $k => $row_) {if($k==0)continue;?>
                     <li>
                         <a href="{:url('read_new')}?id={$row_->id}">
                             <img src="__IMGURL__{$row_->img}" alt="">
@@ -310,11 +310,11 @@
                 <?php } ?>
             </ul>
             <div class="right-news" id="right_news">
-                <?php foreach($row_news as $row_new){?>
-                <a href="{:url('read_new')}?id={$row_new->id}"><img src="__IMGURL__{$row_new->img}" alt="">
-                <h4 class="no_wrap" title="{$row_new->name}">{$row_new->name}</h4></a>
-                <p>{$row_new->cont}......</p>
-                <?php }?>
+
+                <a href="{:url('read_new')}?id={$list_news_index[0]->id}"><img src="__IMGURL__{$list_news_index[0]->img}" alt="">
+                <h4 class="no_wrap" title="{$list_news_index[0]->name}">{$list_news_index[0]->name}</h4></a>
+                <p>{$list_news_index[0]->cont}......</p>
+
             </div>
         </div>
     </div>
@@ -338,7 +338,11 @@
                     if (res.code == 0) {
                         var str = '';
                         var list_news = res.data.list_news;
-                        for (var i = 0; i < list_news.length; i++) {
+                        var i =0;
+                        if(cate_id==0){
+                            i=1;
+                        }
+                        for (; i < list_news.length; i++) {
                             str += ' <li><a href="{:url(\'read_new\')}?id='+list_news[i].id+'"><img src="__IMGURL__' + list_news[i].img + '" alt=""></a><div class="news-tit">';
                             str += ' <a href="{:url(\'read_new\')}?id='+list_news[i].id+'">';
                             str += ' <h4 class="no_wrap" title="' + list_news[i].name + '">' + list_news[i].name + '</h4><p>' + list_news[i].cont + '...... </p>';

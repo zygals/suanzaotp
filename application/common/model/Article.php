@@ -56,7 +56,7 @@ class Article extends Base {
             $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->limit($limit)->order($order)->select();
         } else {
 
-            $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->order($order)->paginate(5);
+            $list_ = self::where($where)->join('cate', 'cate.id=article.cate_id')->field($filed)->order($order)->paginate(12);
         }
 
         return $list_;

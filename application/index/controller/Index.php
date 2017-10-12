@@ -16,16 +16,13 @@ class Index extends Base {
 
         $list_ad = Ad::getAdsByPosition(1);
         $list_cate = Cate::getList(['tp'=>1,'paixu'=>'sort']);
-        $list_news = Article::getList(['tp'=>1,'paixu'=>'sort','index_show'=>['<>',1]], ['article.st' => 1], 4);
-        $row_news = Article::getList(['tp'=>1,'index_show'=>1,'paixu'=>'update_time','sort_type'=>'desc'], ['article.st' => 1], 1);
-        if(count($row_news)==0){
-            $row_news=Article::getList(['paixu'=>'sort'], ['article.st' => 1], 1);
-        }
+        $list_news_index = Article::getList(['tp'=>1,'index_show'=>['=',1],'paixu'=>'update_time','sort_type'=>'desc'], ['article.st' => 1], 5);
+
 
         $list_friend = Friend::getList();
 //        dump($row_news);exit;
         $seo = SeoSet::getSeoByNavId(1);
-        return $this->fetch('', compact('list_ad', 'list_cate', 'list_news', 'row_news','cate_id','list_friend','seo'));
+        return $this->fetch('', compact('list_ad', 'list_cate', 'list_news_index', 'row_news','cate_id','list_friend','seo'));
     }
     public function read_new(Request $request){
         $data = $request->param();
@@ -47,7 +44,14 @@ class Index extends Base {
         if (isset($data['cate_id']) && !empty($data['cate_id'])) {
             $cate_id = $data['cate_id'];
         }
-        $list_news = Article::getList(['tp'=>1,'cate_id' => $cate_id,'paixu'=>'sort'], ['article.st' => 1], 4);
+
+
+if($cate_id==0){
+    $list_news = Article::getList(['tp'=>1,'index_show'=>['=',1],'paixu'=>'update_time','sort_type'=>'desc'], ['article.st' => 1], 5);
+    //unset($list_news[0]);
+}else{
+    $list_news = Article::getList(['tp'=>1,'cate_id' => $cate_id], ['article.st' => 1], 4);
+}
         if(count($list_news)>0){
 
             return json(['code'=>0,'data'=>compact('list_news')]);
