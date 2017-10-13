@@ -18,9 +18,9 @@
         background: rgba(0,0,0,0.8);
     }
     .mask-wrap img {
-        width: 150px;
-        height: 150px;
-        margin-top: 20%;
+        width: 140px;
+        height: 140px;
+        margin-top: 50%;
     }
 </style>
 <div class="swiper-container">
