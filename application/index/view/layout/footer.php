@@ -3,6 +3,7 @@
         <img src="__STATIC__img/top.png" alt="">
     </figure>
 </div>
+<div class="wrapper">
 <div class="footer">
     <div class="footbox">
         <ul class="footul">
@@ -68,6 +69,7 @@
 <p class="pcText">
     粤ICP备15103069号-1
 </p>
+</div>
 <script>
     //    返回顶部
     $(function () {

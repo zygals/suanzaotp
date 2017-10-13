@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=i5FHCLVvOE9AiquzKFTUNP1MFufetFGw&s=1"></script>
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <?php foreach ($list_ad as $row_) { ?>

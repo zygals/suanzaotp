@@ -1,7 +1,7 @@
 {include file="layout/head2"}
 <!-- 头部 -->
 {include file="layout/nav"}
-
+<div class="wrapper">
 <div class="banner">
     <ul class="banner_box">
         <?php foreach($list_ad as $row_){?>
@@ -89,6 +89,7 @@
 			凡是有一定用户基数的微信公众号均可申请详情咨询客服：400-876-8756</span>
         </p>
     </div>
+</div>
 </div>
 <!-- footer -->
 {include file="layout/footer"}
