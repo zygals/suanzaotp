@@ -156,3 +156,45 @@
 
     initMap();//创建和初始化地图
 </script>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    $(function () {
+        window.sr = ScrollReveal()
+        sr.reveal('.info',{
+            origin: 'left',
+            distance : '100px',
+            duration: 800,
+            delay: 150,
+            scale: 1.0
+        })
+            .reveal('.infoPic',{
+                origin: 'right',
+                distance: '100px',
+                duration: 800,
+                delay: 150,
+                scale: 1.0
+            })
+            .reveal('.midUl', {
+                origin: 'bottom',
+                distance: '100px',
+                duration: 800,
+                delay: 150,
+                scale: 1.0
+            })
+            .reveal('.left-about', {
+                origin: 'left',
+                distance : '100px',
+                duration: 800,
+                delay: 150,
+                scale: 1.0
+            })
+            .reveal('#dituContent', {
+                origin: 'right',
+                distance: '100px',
+                duration: 800,
+                delay: 150,
+                scale: 1.0
+            })
+    })
+</script>

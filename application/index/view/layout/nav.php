@@ -57,6 +57,7 @@
             <li><a href="{:url('product/service')}" style="<?php if(request()->controller()=='Product'&& request()->action()=='service'){?>color:rgb(32,112,251);<?php }?>">购买服务</a></li>
             <li><a href="{:url('anli/index')}" style="<?php if(request()->controller()=='Anli'){?>color:rgb(32,112,251);<?php }?>">直播案例</a></li>
             <li><a href="{:url('about/index')}" style="<?php if(request()->controller()=='About'){?>color:rgb(32,112,251);<?php }?>">关于我们</a></li>
+            <li>咨询热线：<span class="zixun">400-876-8756</span></li>
             <!--<p>-->
             <!--<span class="admission" onclick="wind()">免费使用</span>-->
             <!--<span>400-896-8756</span>-->

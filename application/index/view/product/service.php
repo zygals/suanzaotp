@@ -36,7 +36,7 @@
                 <span class="not">首页名称自定义</span>
                 <span class="not">视频+语音直播</span>
                 <span class="not">用户定向推送</span>
-                <span class="not">定时直播，随时回放</span>
+                <span class="not">接通本节能直播，随时回放</span>
             </div>
         </li>
         <li class="color_2">
@@ -55,7 +55,7 @@
                 <span class="on">首页名称自定义</span>
                 <span class="not">视频+语音直播</span>
                 <span class="not">用户定向推送</span>
-                <span class="not">定时直播，随时回放</span>
+                <span class="not">接通本节能直播，随时回放</span>
             </div>
         </li>
         <li class="color_3">
@@ -74,7 +74,7 @@
                 <span class="on">首页名称自定义</span>
                 <span class="on">视频+语音直播</span>
                 <span class="on">用户定向推送</span>
-                <span class="on">定时直播，随时回放</span>
+                <span class="on">接通本节能直播，随时回放</span>
             </div>
         </li>
     </ul>
