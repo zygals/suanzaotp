@@ -292,11 +292,11 @@
                 <?php } ?>
             </ul>
             <div class="right-news" id="right_news">
-
+<?php if(count($list_news_index)>0){?>
                 <a href="{:url('read_new')}?id={$list_news_index[0]->id}"><img src="__IMGURL__{$list_news_index[0]->img}" alt="">
                 <h4 class="no_wrap" title="{$list_news_index[0]->name}">{$list_news_index[0]->name}</h4></a>
                 <p>{$list_news_index[0]->cont}......</p>
-
+<?php }?>
             </div>
         </div>
     </div>
