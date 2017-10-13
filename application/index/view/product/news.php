@@ -28,7 +28,7 @@
                 <li>
                     <div class="left-news">
                         <img src="__STATIC__/img/s-icon.png" alt="">
-                        <a href="{:url('index/read_new')}?id={$row_->id}">
+                        <a href="{:url('/index/index/read_new/id/8')}">
                             <p>{$row_->name}</p>
                         </a>
                     </div>

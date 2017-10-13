@@ -1216,3 +1216,6 @@
 .bread a:hover{
 	text-decoration: underline;
 }
+.info,.infoPic,.midUl,.left-about,#dituContent {
+	visibility: hidden;
+}
