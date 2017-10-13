@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5a38552-fd89-4881-9809-3e0b3810baf3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/read_new.php" afterPath="$PROJECT_DIR$/application/index/view/index/read_new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/anli/index.php" afterPath="$PROJECT_DIR$/application/index/view/anli/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/index.php" afterPath="$PROJECT_DIR$/application/index/view/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/product/news.php" afterPath="$PROJECT_DIR$/application/index/view/product/news.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,12 +25,22 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+            <state relative-caret-position="237">
+              <caret line="330" column="62" lean-forward="true" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="62" />
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#9;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/anli/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="107" column="59" lean-forward="false" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,13 +78,13 @@
       <file leaf-file-name="news.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/product/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="103" column="47" lean-forward="false" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
               <folding>
-                <marker date="1507867427561" expanded="true" signature="1578:1615" ph="{...}" />
-                <marker date="1507867427561" expanded="true" signature="1633:1647" ph="..." />
-                <marker date="1507867427561" expanded="true" signature="1681:1685" ph="&lt;" />
-                <marker date="1507867427561" expanded="true" signature="2098:2102" ph="&gt;" />
+                <marker date="1507871305020" expanded="true" signature="1578:1615" ph="{...}" />
+                <marker date="1507871305020" expanded="true" signature="1633:1647" ph="..." />
+                <marker date="1507871305020" expanded="true" signature="1681:1685" ph="&lt;" />
+                <marker date="1507871305020" expanded="true" signature="2098:2102" ph="&gt;" />
               </folding>
             </state>
           </provider>
@@ -81,18 +93,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/about/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="2681">
+              <caret line="204" column="9" lean-forward="true" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_new.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="read_new.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/index/read_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+            <state relative-caret-position="233">
+              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding>
                 <element signature="e#817#821#0#HTML" expanded="true" />
                 <element signature="e#959#963#0#HTML" expanded="true" />
@@ -116,16 +128,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
               <caret line="1218" column="0" lean-forward="false" selection-start-line="1218" selection-start-column="0" selection-end-line="1218" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -219,7 +221,6 @@
         <option value="$PROJECT_DIR$/application/index/view/layout/base.php" />
         <option value="$PROJECT_DIR$/public/static/css/homepage.css" />
         <option value="$PROJECT_DIR$/application/back/view/article/create.php" />
-        <option value="$PROJECT_DIR$/application/index/view/anli/index.php" />
         <option value="$PROJECT_DIR$/application/back/view/article/edit.php" />
         <option value="$PROJECT_DIR$/application/back/controller/ArticleController.php" />
         <option value="$PROJECT_DIR$/application/back/view/ad/create.php" />
@@ -229,12 +230,13 @@
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/common/model/Article.php" />
         <option value="$PROJECT_DIR$/application/index/view/product/service.php" />
-        <option value="$PROJECT_DIR$/application/index/view/index/index.php" />
-        <option value="$PROJECT_DIR$/application/index/view/product/news.php" />
         <option value="$PROJECT_DIR$/application/index/view/layout/nav.php" />
         <option value="$PROJECT_DIR$/public/static/css/index.css" />
         <option value="$PROJECT_DIR$/application/index/view/about/index.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/read_new.php" />
+        <option value="$PROJECT_DIR$/application/index/view/product/news.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/anli/index.php" />
       </list>
     </option>
   </component>
@@ -575,12 +577,12 @@
       <workItem from="1507616613323" duration="12137000" />
       <workItem from="1507686669986" duration="14383000" />
       <workItem from="1507770959505" duration="14605000" />
-      <workItem from="1507858687309" duration="10180000" />
+      <workItem from="1507858687309" duration="10568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244324000" />
+    <option name="totallyTimeSpent" value="244712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="1311" height="744" extended-state="6" />
@@ -870,14 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/anli/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="100" column="28" lean-forward="true" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/back/view/article/edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
@@ -983,35 +977,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/product/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <marker date="1507867427561" expanded="true" signature="1578:1615" ph="{...}" />
-            <marker date="1507867427561" expanded="true" signature="1633:1647" ph="..." />
-            <marker date="1507867427561" expanded="true" signature="1681:1685" ph="&lt;" />
-            <marker date="1507867427561" expanded="true" signature="2098:2102" ph="&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/layout/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#9;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,22 +1001,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/about/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/read_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        <state relative-caret-position="233">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
             <element signature="e#817#821#0#HTML" expanded="true" />
             <element signature="e#959#963#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/product/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="103" column="47" lean-forward="false" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+          <folding>
+            <marker date="1507871305020" expanded="true" signature="1578:1615" ph="{...}" />
+            <marker date="1507871305020" expanded="true" signature="1633:1647" ph="..." />
+            <marker date="1507871305020" expanded="true" signature="1681:1685" ph="&lt;" />
+            <marker date="1507871305020" expanded="true" signature="2098:2102" ph="&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/about/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2681">
+          <caret line="204" column="9" lean-forward="true" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="330" column="62" lean-forward="true" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="62" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#9;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/anli/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="107" column="59" lean-forward="false" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

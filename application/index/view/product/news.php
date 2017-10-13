@@ -101,7 +101,7 @@
                     var last_page = res.data.list_news.last_page;
                     var href_url=''
                     for (var i = 0; i < list_news.length; i++) {
-                        href_url = '__IMGURL__index/index/read_new/id/'+list_news[i].id+'.html';
+                        href_url = '__IMGURL__/index/index/read_new/id/'+list_news[i].id+'.html';
                         str += '<li><div class="left-news"><img src="__STATIC__/img/s-icon.png" alt="">';
                         str += ' <a href="'+href_url + '"> <p>' + list_news[i].name + '</p>';
                         str += '</a> </div><div class="news-time"><span>' + list_news[i].create_time + '</span> </div></li> ';

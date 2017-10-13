@@ -48,7 +48,7 @@
         <ul class="show-list" style="display: block;" id="list_anli">
             <?php foreach ($list_anli as $row_) { ?>
                 <li>
-                    <a href="{:url('index/read_new')}?id={$row_->id}">
+                    <a href="<?php echo url("/index/index/read_new/id/$row_->id");?>">
                         <img src="__IMGURL__{$row_->img}" alt="">
                         <div class="mask-wrap">
                             <img src="__IMGURL__{$row_->img_erwei}" alt="二维码">
@@ -101,8 +101,11 @@
                     } else {
                         $('#btn_more').show();
                     }
+                    var href_url = '';
+
                     for (var i = 0; i < list_news.length; i++) {
-                        str += '  <li><a href="{:url(\'index/read_new\')}?id=' + list_news[i].id + '">';
+                        href_url = '__IMGURL__/index/index/read_new/id/'+list_news[i].id+'.html';
+                        str += '  <li><a href="'+href_url+'">';
                         str += ' <img src="__IMGURL__' + list_news[i].img + '" alt="">';
                         str+='<div class="mask-wrap"><img src="__IMGURL__' + list_news[i].img_erwei + '" alt="二维码"></div>';
                         str += '<p>' + list_news[i].name + '</p></a> </li>';

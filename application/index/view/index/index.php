@@ -327,7 +327,7 @@
                         }
                         for (; i < list_news.length; i++) {
 
-                            href_url = '__IMGURL__index/index/read_new/id/'+list_news[i].id+'.html';
+                            href_url = '__IMGURL__/index/index/read_new/id/'+list_news[i].id+'.html';
                             str += ' <li><a href="'+href_url+'"><img src="__IMGURL__' + list_news[i].img + '" alt=""></a><div class="news-tit">';
                             str += ' <a href="'+href_url+'">';
                             str += ' <h4 class="no_wrap" title="' + list_news[i].name + '">' + list_news[i].name + '</h4><p>' + list_news[i].cont + '...... </p>';
