@@ -46,11 +46,11 @@
             </li>
 
             <li class="father"><a href="{:url('product/index')}" style="<?php if(request()->controller()=='Product' && request()->action()=='index'){?>color:rgb(32,112,251);<?php }?>">产品体验</a>
-                <ul class="child">
+                <!--<ul class="child">子栏目，暂时不要
                     <li><a href="">直播间</a></li>
                     <li><a href="">直播间趣</a></li>
 
-                </ul>
+                </ul>-->
             </li>
             <li><a href="{:url('product/news')}" style="<?php if(request()->controller()=='Product' && request()->action()=='news'){?>color:rgb(32,112,251);<?php }?>">新闻资讯</a></li>
             <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">直播间后台</a></li>

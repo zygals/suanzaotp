@@ -276,12 +276,12 @@
             <ul class="left-news" id="left_news">
                 <?php foreach ($list_news_index as $k => $row_) {if($k==0)continue;?>
                     <li>
-                        <a href="{:url('read_new')}?id={$row_->id}">
+                        <a href="<?php echo url("/index/index/read_new/id/$row_->id");?>">
                             <img src="__IMGURL__{$row_->img}" alt="">
                         </a>
                         <div class="news-tit">
 
-                            <a href="{:url('read_new')}?id={$row_->id}">
+                            <a href="<?php echo url("/index/index/read_new/id/$row_->id");?>">
                                 <h4 class="no_wrap" title="{$row_->name}">{$row_->name}</h4>
                                 <p>{$row_->cont}......
                                 </p>
@@ -293,7 +293,7 @@
             </ul>
             <div class="right-news" id="right_news">
 <?php if(count($list_news_index)>0){?>
-                <a href="{:url('read_new')}?id={$list_news_index[0]->id}"><img src="__IMGURL__{$list_news_index[0]->img}" alt="">
+                <a href="<?php echo url("/index/index/read_new/id/".$list_news_index[0]->id);?>"><img src="__IMGURL__{$list_news_index[0]->img}" alt="">
                 <h4 class="no_wrap" title="{$list_news_index[0]->name}">{$list_news_index[0]->name}</h4></a>
                 <p>{$list_news_index[0]->cont}......</p>
 <?php }?>
@@ -321,12 +321,15 @@
                         var str = '';
                         var list_news = res.data.list_news;
                         var i =0;
+                        var href_url = '';
                         if(cate_id==0){
                             i=1;
                         }
                         for (; i < list_news.length; i++) {
-                            str += ' <li><a href="{:url(\'read_new\')}?id='+list_news[i].id+'"><img src="__IMGURL__' + list_news[i].img + '" alt=""></a><div class="news-tit">';
-                            str += ' <a href="{:url(\'read_new\')}?id='+list_news[i].id+'">';
+
+                            href_url = '__IMGURL__index/index/read_new/id/'+list_news[i].id+'.html';
+                            str += ' <li><a href="'+href_url+'"><img src="__IMGURL__' + list_news[i].img + '" alt=""></a><div class="news-tit">';
+                            str += ' <a href="'+href_url+'">';
                             str += ' <h4 class="no_wrap" title="' + list_news[i].name + '">' + list_news[i].name + '</h4><p>' + list_news[i].cont + '...... </p>';
                             str += '</a></div></li>';
                         }
