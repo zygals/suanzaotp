@@ -63,7 +63,7 @@ class Article extends Base {
     }
 
     public static function findOne($id) {
-        return self::where(['id' => $id, 'st' => 1])->find();
+        return self::where(['article.id' => $id, 'article.st' => 1])->field('article.*,cate.name catename')->join('cate','cate.id=article.cate_id')->find();
     }
 
     public function getCateId($cate_name) {

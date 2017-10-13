@@ -35,6 +35,7 @@ class Index extends Base {
             'keywords'=>$row_->keywords,
             'description'=>$row_->description,
         ];
+//        dump($row_);exit;
         return $this->fetch('',['row_'=>$row_,'seo'=>$seo]);
     }
 

@@ -35,6 +35,7 @@
 
 </style>
 <div class="articleBox">
+    <div class="bread">您所在的位置:<a href="{:url('index/index')}">首页</a> &gt;<a href="{:url('product/news')}">新闻资讯</a> &gt;<a href="{:url('product/news')}">{$row_->catename}</a><!-- &gt;<span>news title...</span>--></div>
     <h2 class="a-title">{$row_->name}</h2>
     <p class="a-time">{$row_->create_time}</p>
     <div class="a-cont">

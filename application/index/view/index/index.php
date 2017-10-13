@@ -207,11 +207,11 @@
                         <span class="on">付费内容载体：音频、视频</span>
                         <span class="on">付费形式：单节课、系列课</span>
                         <span class="on">运营管理：内容、用户关系、财务</span>
-                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
-                        <span class="on">邀请卡</span>
-                        <span class="on">评论互动</span>
-                        <span class="on">首页名称自定义</span>
-                        <span class="on">视频+语音直播</span>
+                        <span class="not">数据分析：营收趋势、用户活跃度等</span>
+                        <span class="not">邀请卡</span>
+                        <span class="not">评论互动</span>
+                        <span class="not">首页名称自定义</span>
+                        <span class="not">视频+语音直播</span>
                         <span class="not">用户定向推送</span>
                         <span class="not">定时直播，随时回放</span>
                     </div>
@@ -230,9 +230,9 @@
                         <span class="on">邀请卡</span>
                         <span class="on">评论互动</span>
                         <span class="on">首页名称自定义</span>
-                        <span class="on">视频+语音直播</span>
-                        <span class="on">用户定向推送</span>
-                        <span class="on">定时直播，随时回放</span>
+                        <span class="not">视频+语音直播</span>
+                        <span class="not">用户定向推送</span>
+                        <span class="not">定时直播，随时回放</span>
                     </div>
                 </li>
                 <li class="color_3">

@@ -1196,3 +1196,20 @@
 	border-radius: 40%;
 	letter-spacing: 3px;
 }
+.bread{
+	text-align: left;
+	font-size:14px;
+	color:#999;
+	margin-top: 80px;
+}
+.bread a{
+	margin:0 5px;
+	color:#999;
+}
+.bread span{
+	margin-left:5px;
+
+}
+.bread a:hover{
+	text-decoration: underline;
+}
