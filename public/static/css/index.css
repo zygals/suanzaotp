@@ -852,7 +852,7 @@
     width: 55%;
 }
 .left-news li{
-    height: 100px;
+	height: 120px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
@@ -861,6 +861,7 @@
 
 .left-news li img {
     width: 170px;
+	height: 120px;
 }
 .news-tit {
     margin-left: 40px;
@@ -891,6 +892,7 @@
 }
 .right-news img {
     width: 360px;
+	height:225px;
 }
 .right-news h4 {
     font-size: 26px;
