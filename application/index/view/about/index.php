@@ -1,3 +1,8 @@
+<style>
+.info,.infoPic,.midUl,.left-about,#dituContent {
+visibility: hidden;
+}
+</style>
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=i5FHCLVvOE9AiquzKFTUNP1MFufetFGw&s=1"></script>
 <div class="swiper-container">
     <div class="swiper-wrapper">
