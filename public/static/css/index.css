@@ -635,20 +635,13 @@
 	text-align: center;
 }
 .download {
-    position: absolute;
-    right: 600px;
-    top:125px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
     text-align: center;
 }
 
-@media screen and (max-width: 1366px){
-    .download {
-        position: absolute;
-        right: 280px;
-        top:125px;
-        text-align: center;
-    }
-}
+
 .download h4 {
     font-size: 18px;
     color: #fff;
@@ -891,8 +884,8 @@
     margin-right: 10px;
 }
 .right-news img {
-    width: 360px;
-	height:225px;
+    width: 340px;
+	height:240px;
 }
 .right-news h4 {
     font-size: 26px;

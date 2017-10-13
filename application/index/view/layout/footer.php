@@ -36,6 +36,15 @@
             <div class="ewmPic-pig"></div>
             <p>微信公众号</p>
         </div>
+        <div class="download">
+            <h4>App下载</h4>
+            <a href="{:url('index/downfile')}?path={$row_file_apple->path}">
+                <img src="__STATIC__img/ios.png" alt="" class="ios">
+            </a><br>
+            <a href="{:url('index/downfile')}?path={$row_file_andorid->path}">
+                <img src="__STATIC__img/andriod.png" alt="" class="android">
+            </a>
+        </div>
         <div class="call">
             <p>联系方式：400-876-8756</p>
             <p>华龙股份 股票代码 870893</p>
@@ -52,15 +61,7 @@
     </div>
     <?php }?>
 
-    <div class="download">
-        <h4>App下载</h4>
-        <a href="{:url('index/downfile')}?path={$row_file_apple->path}">
-            <img src="__STATIC__img/ios.png" alt="" class="ios">
-        </a><br>
-        <a href="{:url('index/downfile')}?path={$row_file_andorid->path}">
-            <img src="__STATIC__img/andriod.png" alt="" class="android">
-        </a>
-    </div>
+
 </div>
 <div class="record">
     <p>北京龙链科技有限公司</p>
