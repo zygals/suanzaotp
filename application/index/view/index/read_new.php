@@ -21,7 +21,7 @@
         margin-top: 20px;
     }
     .a-cont img {
-        width: 100%;
+        
     }
 
     .a-cont p {
