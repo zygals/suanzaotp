@@ -17,26 +17,34 @@
         <ul>
             <li>
                 <p>产品</p>
-                <a>开放平台</a>
-                <a>闪电拉新</a>
+                <a href="{:url('product/index')}">产品体验</a>
+                <a href="__IMGURL__index/read_new/id/44">使用教程</a>
             </li>
             <li>
                 <p>公司</p>
-                <a>关于酸枣</a>
-                <a>最新动态</a>
+                <a href="{:url('about/index')}">关于酸枣</a>
+                <a href="{:url('product/news')}">行业动态</a>
             </li>
             <li>
                 <p>服务</p>
-                <a>使用指南</a>
-                <a>大V入驻</a>
-                <a>客户端下载</a>
+                <a href="javascript:void(0)">7x12小时售后</a>
+                <a  href="javascript:void(0)">1V1竭诚服务</a>
+            </li>
+            <li>
+                <p>联系方式</p>
+                <a>售前电话 400-876-8756</a>
+                <a>售后电话 400-116-9269</a>
             </li>
         </ul>
         <div class="ewmPic">
             <div class="ewmPic-pig"></div>
-            <p>微信公众号</p>
+            <p>关注酸枣公众号</p>
         </div>
-        <div class="download">
+        <div class="ewmPic">
+            <div class="ewmDown-pig"></div>
+            <p>APP下载</p>
+        </div>
+        <!--<div class="download">
             <h4>App下载</h4>
             <a href="{:url('index/downfile')}?path={$row_file_apple->path}">
                 <img src="__STATIC__img/ios.png" alt="" class="ios">
@@ -44,9 +52,9 @@
             <a href="{:url('index/downfile')}?path={$row_file_andorid->path}">
                 <img src="__STATIC__img/andriod.png" alt="" class="android">
             </a>
-        </div>
+        </div>-->
         <div class="call">
-            <p>联系方式：400-876-8756</p>
+
             <p>华龙股份 股票代码 870893</p>
         </div>
     </div>
@@ -61,7 +69,6 @@
     </div>
     <?php }?>
 
-
 </div>
 <div class="record">
     <p>北京龙链科技有限公司</p>
@@ -69,6 +76,20 @@
 </div>
 <p class="pcText">
     粤ICP备15103069号-1
+
+    <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F532ffbc9449acbb6afbe7a513e653144' type='text/javascript'%3E%3C/script%3E")) </script>
+    百度统计代码： <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?532ffbc9449acbb6afbe7a513e653144";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    离线宝代码： <script>
+        var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?532ffbc9449acbb6afbe7a513e653144"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script> 
+    <script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=11111618"></script>
 </p>
 </div>
 <script>

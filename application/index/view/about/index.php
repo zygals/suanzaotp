@@ -19,7 +19,7 @@ visibility: hidden;
     <div class="info">
         <h3>关于酸枣</h3>
         <p>酸枣直播，是一款专注于微信公众号的轻量化直播工具。</p>
-        <p>通过利用酸枣的基础直播服务和闪电拉新服务帮助自媒体解决内容变<br>现，付费转化等各项需求</p>
+        <p>通过利用酸枣的基础直播服务和定向推送服务帮助自媒体解决内容变<br>现，付费转化等各项需求</p>
         <p>让更多自媒体人实现公众号的收入暴增、粉丝暴涨。</p>
         <p>面向各行业自媒体的变现需求，轻量化、免开发一键即可接入的视频<br>音频直播工具。</p>
     </div>
@@ -52,7 +52,9 @@ visibility: hidden;
     <div class="left-about">
         <h3>北京龙链科技有限公司</h3>
         <ul>
-            <li><img src="__STATIC__img/i-phone.png" alt=""><span>咨询热线：400-876-8756</span></li>
+            <li><img src="__STATIC__img/i-phone.png" alt="">
+                <span><a>售前电话：400-876-8756</a><br>
+                <a style="    padding-left: 54px;">售后电话：400-116-9269</a></span></li>
             <li><img src="__STATIC__img/i-wx.png" alt=""><span>微信：suanzaozb</span></li>
             <li><img src="__STATIC__img/i-qq.png" alt=""><span>QQ：2570151949</span></li>
             <li><img src="__STATIC__img/i-email.png" alt=""><span>邮箱：2570151949@qq.com</span></li>

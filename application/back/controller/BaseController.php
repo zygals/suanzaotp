@@ -22,6 +22,7 @@ class BaseController extends Controller {
 			if(!session('admin_suanzao') && !in_array($current_request,$not_logins)){
 				$this->redirect("admin/login");
 			}
+
 			if(!empty(session('admin_suanzao')) && session('admin_suanzao')->type=='一般'){
                 $my_power = MenuAdmin::getListNormal();
                 $is_have_power = false;

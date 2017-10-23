@@ -123,7 +123,7 @@
         <h4>一键接入，让你的微信公众号秒变“直播间”</h4>
         <div class="zsPic"></div>
         <div class="bannerBtn contBtn">
-            <p onclick="wind()">点击咨询酸枣客服</p>
+            <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">点击咨询酸枣客服</a></p>
             <p onclick="wind()">免费试用酸枣直播</p>
         </div>
     </div>
@@ -188,20 +188,20 @@
             <h3>即刻开始：用直播实现价值</h3>
             <p class="sizetitle">创新在线学习模式，引领直播课堂潮流</p>
             <div class="bannerBtn contBtn">
-                <p onclick="wind()">在线直播点击咨询</p>
+                <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">在线直播点击咨询</a></p>
                 <p onclick="wind()">免费体验直播系统</p>
             </div>
         </div>
     </div>
     <div class="listBox service">
         <h3>多种版本供你选择</h3>
-        <p>基础直播服务+闪电拉新服务，帮助您的微信公众号快速增收涨粉</p>
+        <p>基础直播服务+定向推送服务，帮助您的微信公众号快速增收涨粉</p>
         <ul>
                 <li class="color_1">
                     <div class="service_top">
                         <h5>基本版</h5>
                         <p>功能费：0元／年</p>
-                        <a href="#">免费开通</a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">免费开通</a>
                     </div>
                     <div class="border">
                         <span class="on">付费内容载体：音频、视频</span>
@@ -220,7 +220,7 @@
                     <div class="service_top">
                         <h5>专业版</h5>
                         <p>功能费：3999元／年</p>
-                        <a href="#">立即开通</a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
                     </div>
                     <div class="border">
                         <span class="on">付费内容载体：音频、视频</span>
@@ -239,7 +239,7 @@
                     <div class="service_top">
                         <h5>至尊版</h5>
                         <p>功能费：8888元／年</p>
-                        <a href="#">立即开通</a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
                     </div>
                     <div class="border">
                         <span class="on">付费内容载体：音频、视频</span>

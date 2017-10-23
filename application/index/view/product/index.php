@@ -31,9 +31,10 @@
     <!-- box1 -->
     <div class="product">
         <div class="hd">
-            <ul class="w1200">
+            <ul class="">
                 <li class="n1 on">基础直播</li>
-                <li class="n2">闪电拉新</li>
+                <li class="n2">定向推送</li>
+                <li class="n3"><a href="__IMGURL__index/read_new/id/44">酸枣使用教程</a></li>
             </ul>
         </div>
         <div class="bd">
@@ -41,9 +42,10 @@
                 <div class="p1">
                     <div class="w1200">
                         <dl>
-                            <dt>多设备接入微信公号直播更立体</dt>
-                            <dd>轻量化、免开发一键即可接入微信公号的直播工具
-                                <br>音频、视频同步直播
+                            <dt>多设备接入微信公众号</dt>
+                            <dd>操作便捷：轻量化、免开发一键即可接入微信公号的直播工具
+                            </dd>
+                            <dd><b style="font-weight:bold;font-size:18px;">互动方式：</b>各种打赏分销邀请卡（调动观众参与热情，增强活动的互动性和趣味性）问答、问卷、投票（直播中实时解决观众疑问、问卷和投票协助主办方完成市场调查。
                             </dd>
                         </dl>
                         <div class="img"><img src="__STATIC__images/img01.png"></div>
@@ -55,8 +57,10 @@
                         <dl>
                             <dt>音频、视频同步直播</dt>
                             <dd>
-                                付费课，多种变现方式自由组合<br>
-                                全面放大内容价值
+                                直播方式：直播+互动 文字+配图
+                            </dd>
+                            <dd>
+                                直播形式：多种直播形式，无人数限制、近距离、强互动式学习    直播形式分为：语音直播    视频直播    录播直播 、ppt直播   群聊直播
                             </dd>
                         </dl>
                     </div>
@@ -132,9 +136,7 @@
         $(".banner").banner({});
     })
 </script>
-<script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F302a5cf99fe1e8b14bd879aba90f1341' type='text/javascript'%3E%3C/script%3E")) </script>
+
 
 <script>
     var _hmt = _hmt || [];

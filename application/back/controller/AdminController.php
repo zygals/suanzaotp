@@ -70,6 +70,7 @@ class AdminController extends BaseController {
 
     public function create() {
         $list_power = MenuAdmin::getPower();
+
         return $this->fetch('', ['list_power' => $list_power]);
     }
 

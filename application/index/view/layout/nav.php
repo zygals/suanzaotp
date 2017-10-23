@@ -33,6 +33,9 @@
     .father:hover ul li {
         opacity: 1;
     }
+    .father li:hover .now-child {
+        display: block;
+    }
 </style>
 
 <div class="header">
@@ -46,17 +49,23 @@
             </li>
 
             <li class="father"><a href="{:url('product/index')}" style="<?php if(request()->controller()=='Product' && request()->action()=='index'){?>color:rgb(32,112,251);<?php }?>">产品体验</a>
-                <!--<ul class="child">子栏目，暂时不要
+                <ul class="child">
                     <li><a href="">直播间</a></li>
                     <li><a href="">直播间趣</a></li>
 
-                </ul>-->
+                </ul>
             </li>
-            <li><a href="{:url('product/news')}" style="<?php if(request()->controller()=='Product' && request()->action()=='news'){?>color:rgb(32,112,251);<?php }?>">新闻资讯</a></li>
-            <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">直播间后台</a></li>
             <li><a href="{:url('product/service')}" style="<?php if(request()->controller()=='Product'&& request()->action()=='service'){?>color:rgb(32,112,251);<?php }?>">购买服务</a></li>
+            <li><a href="{:url('product/news')}" style="<?php if(request()->controller()=='Product' && request()->action()=='news'){?>color:rgb(32,112,251);<?php }?>">新闻资讯</a></li>
             <li><a href="{:url('anli/index')}" style="<?php if(request()->controller()=='Anli'){?>color:rgb(32,112,251);<?php }?>">直播案例</a></li>
-            <li><a href="{:url('about/index')}" style="<?php if(request()->controller()=='About'){?>color:rgb(32,112,251);<?php }?>">关于我们</a></li>
+            <li><a href="{:url('about/index')}" style="<?php if(request()->controller()=='About'){?>color:rgb(32,112,251);<?php }?>">联系我们</a></li>
+            <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">登录直播间后台</a></li>
+            <li class="father"><a target="_blank" href="javascript:void(0)">免费注册</a>
+                <ul class="child">
+                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+<!--                    <li>sdfsagsdg</li>-->
+                </ul>
+            </li>
             <li>咨询热线：<span class="zixun">400-876-8756</span></li>
             <!--<p>-->
             <!--<span class="admission" onclick="wind()">免费使用</span>-->

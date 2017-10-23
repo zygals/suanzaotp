@@ -45,7 +45,7 @@
 }
 .headbox ul li a{
 	display: block;
-	padding:0 25px;
+	padding:0 15px;
 	font-size: 16px;
     color: #fff;
 }
@@ -245,7 +245,7 @@
 }
 
 .conlumn .pos-bottom {
-    left: 24%;
+    left: 19%;
     top: 21%;
 }
 .conlumn .pos:hover {
@@ -615,12 +615,19 @@
 .ewmPic{
 	float: left;
 	margin-top: 60px;
-	margin-left: 280px;
+	margin-left: 85px;
 }
 .ewmPic .ewmPic-pig{
 	width: 110px;
 	height: 110px;
 	background: url(../img/ewm.png) no-repeat center center;
+	margin-bottom: 14px;
+}
+.ewmPic .ewmDown-pig{
+	width: 110px;
+	height: 110px;
+	background: url(../img/软件下载二维码.png) no-repeat center center;
+	background-size: 110px 110px;
 	margin-bottom: 14px;
 }
 
@@ -854,7 +861,7 @@
 
 .left-news li img {
     width: 170px;
-	height: 120px;
+	/*height: 120px;*/
 }
 .news-tit {
     margin-left: 40px;
@@ -885,7 +892,7 @@
 }
 .right-news img {
     width: 340px;
-	height:240px;
+	/*height:240px;*/
 }
 .right-news h4 {
     font-size: 26px;

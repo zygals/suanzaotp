@@ -18,13 +18,13 @@
 <!-- service -->
 <div class="service w1200">
     <h3>多种版本供您选择</h3>
-    <h4>基础直播服务+闪电拉新服务，帮助您的微信公众号快速增收涨粉</h4>
+    <h4>基础直播服务+定向推送服务，帮助您的微信公众号快速增收涨粉</h4>
     <ul>
         <li class="color_1">
             <div class="service_top">
                 <h5>基本版</h5>
                 <p>功能费：0元／年</p>
-                <a href="#">免费开通</a>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">免费开通</a>
             </div>
             <div class="border">
                 <span class="on">付费内容载体：音频、视频</span>
@@ -43,7 +43,7 @@
             <div class="service_top">
                 <h5>专业版</h5>
                 <p>功能费：3999元／年</p>
-                <a href="#">立即开通</a>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
             </div>
             <div class="border">
                 <span class="on">付费内容载体：音频、视频</span>
@@ -62,7 +62,7 @@
             <div class="service_top">
                 <h5>至尊版</h5>
                 <p>功能费：8888元／年</p>
-                <a href="#">立即开通</a>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
             </div>
             <div class="border">
                 <span class="on">付费内容载体：音频、视频</span>
