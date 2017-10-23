@@ -316,7 +316,6 @@
                     "cate_id": cate_id
                 },
                 success: function (res) {
-                    //alert(res.data)
                     if (res.code == 0) {
                         var str = '';
                         var list_news = res.data.list_news;
@@ -327,7 +326,7 @@
                         }
                         for (; i < list_news.length; i++) {
 
-                            href_url = '__IMGURL__/index/index/read_new/id/'+list_news[i].id+'.html';
+                            href_url = '__IMGURL__/index/read_new/id/'+list_news[i].id+'.html';
                             str += ' <li><a href="'+href_url+'"><img src="__IMGURL__' + list_news[i].img + '" alt=""></a><div class="news-tit">';
                             str += ' <a href="'+href_url+'">';
                             str += ' <h4 class="no_wrap" title="' + list_news[i].name + '">' + list_news[i].name + '</h4><p>' + list_news[i].cont + '...... </p>';
@@ -336,15 +335,9 @@
 
                         $('#left_news').html(str);
 
-                        /*var str2 = '';
-                        str2 += ' <img src="__IMGURL__' + list_news[0].img + '" alt="">';
-                        str2 += '<h4>' + list_news[0].name + '</h4>';
-                        str2 += '<p>' + list_news[0].cont + '</p>';
 
-                        $('#right_news').html(str2);*/
                     } else {
                         $('#left_news').html('');
-                        //$('#right_news').html('');
                     }
 
 

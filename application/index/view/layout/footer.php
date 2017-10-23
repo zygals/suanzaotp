@@ -18,7 +18,7 @@
             <li>
                 <p>产品</p>
                 <a href="{:url('product/index')}">产品体验</a>
-                <a href="__IMGURL__index/read_new/id/44">使用教程</a>
+                <a href="__IMGURL__/index/read_new/id/44.html">使用教程</a>
             </li>
             <li>
                 <p>公司</p>
