@@ -70,7 +70,7 @@
         </div>
         <div id="personInfor">
 
-            <p><a href="{:Url('index/index/index')}" target="_blank">前台</a></p>
+            <p><a href="/index.php" target="_blank">前台</a></p>
 
             <p><a href="{:Url('index/index')}">登录日志</a></p>
         </div>
