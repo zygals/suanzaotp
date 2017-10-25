@@ -1,7 +1,7 @@
 <style>
-.info,.infoPic,.midUl,.left-about,#dituContent {
+/*.info,.infoPic,.midUl,.left-about,#dituContent {
 visibility: hidden;
-}
+}*/
 </style>
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=i5FHCLVvOE9AiquzKFTUNP1MFufetFGw&s=1"></script>
 <div class="swiper-container">
@@ -164,9 +164,9 @@ visibility: hidden;
     initMap();//创建和初始化地图
 </script>
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!--<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>-->
 <script>
-    $(function () {
+   /* $(function () {
         window.sr = ScrollReveal()
         sr.reveal('.info',{
             origin: 'left',
@@ -203,5 +203,5 @@ visibility: hidden;
                 delay: 150,
                 scale: 1.0
             })
-    })
+    })*/
 </script>
