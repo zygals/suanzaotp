@@ -1,4 +1,12 @@
-
+    
+    <div class="video-cont" style = 'width:698px;height:392px'>
+    <div class="close-btn">x</div>
+        <div class="video-play">
+            <video id="example_video_1" controls="controls" width="1200px" height="640px">
+                <source src="__STATIC__img/suanzao-vedio.mp4" type='video/mp4' />
+            </video>
+        </div>
+    </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php foreach ($list_ad as $row_) { ?>
@@ -9,6 +17,15 @@
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination defined-pag"></div>
+        <div class="modal-area">
+            <div class="left-modal">
+                <div class="left-head">立即体验</div>
+                <div class="left-child">
+                    <img src="__STATIC__img/软件下载二维码.png" alt="">
+                </div>
+            </div>
+            <div class="right-modal">观看视频</div>
+        </div>
     </div>
 
     <div class="head-wrap">
@@ -124,7 +141,11 @@
         <div class="zsPic"></div>
         <div class="bannerBtn contBtn">
             <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">点击咨询酸枣客服</a></p>
-            <p onclick="wind()">免费试用酸枣直播</p>
+            <div onclick="wind()" class='right-wrap'>免费试用酸枣直播
+                <ul class="right-child">
+                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="range">
@@ -189,7 +210,11 @@
             <p class="sizetitle">创新在线学习模式，引领直播课堂潮流</p>
             <div class="bannerBtn contBtn">
                 <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">在线直播点击咨询</a></p>
-                <p onclick="wind()">免费体验直播系统</p>
+                <div onclick="wind()" class='right-wrap'>免费体验系统
+                                <ul class="right-child">
+                                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+                                </ul>
+                            </div>
             </div>
         </div>
     </div>
@@ -345,3 +370,17 @@
             });
         }
     </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.right-modal').on('click',function () {
+                $('.video-cont').show();
+            })
+            $('.close-btn').on('click',function () {
+                        $('.video-cont').hide();
+                        $('video').get(0).pause();
+                    })
+        })
+
+
+    </script>
+

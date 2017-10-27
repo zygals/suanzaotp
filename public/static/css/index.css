@@ -1,4 +1,45 @@
 
+ins#qiao-invite-wrap {
+    z-index: 9998 !important;
+}
+.video-cont {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    margin: auto;
+    display: none;
+}
+.video-cont .close-btn {
+    position: absolute;
+    width: 50px;
+    height:50px;
+    line-height:50px;
+    border-radius: 50%;
+    top: -30%;
+    right: -33%;
+    z-index: 111;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+
+.video-play {
+    position: absolute;
+    left: -40%;
+    top: -20%;
+}
+
+.video-play video {
+    z-index: 10001;
+    opacity: 1;
+}
+
 .wrapper{
 	width: 100%;
     min-width:1240px;
@@ -18,30 +59,69 @@
 .swiper-container {
     margin-top: 60px;
     height: 560px;
+    position: relative;
 }
+
+.swiper-container .modal-area {
+    position: absolute;
+    left: 18%;
+    bottom: 13%;
+    z-index: 999;
+    display: flex;
+    color: #fff;
+}
+
+.swiper-container .modal-area img {
+    width: 180px;
+    height:180px;
+    z-index:999;
+    opacity:0;
+}
+
+.swiper-container .modal-area .left-modal {
+    padding: 10px 70px;
+    margin-right: 50px;
+    background: rgb(42,117,237);
+    cursor: pointer;
+    position: relative;
+}
+.swiper-container .modal-area .left-modal .left-child {
+    position: absolute;
+    left: -200px;
+    top: -70px;
+}
+.swiper-container .modal-area .left-modal:hover .left-child img{
+    opacity:1;
+}
+.swiper-container .modal-area .right-modal {
+    padding: 10px 70px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
 .swiper-slide img {
     width: 100%;
     height: 560px;
 }
 .headbox{
-	width:1200px;
+	width:1240px;
 	height: 60px;
 	line-height: 60px;
 	margin: 0 auto;
+    display: flex;
 }
 .head-logo {
-    float: left;
     margin-top: 5px;
 }
 
 .headbox ul{
-	height: 60px;
-    float: right;
+    margin-left: 120px;
+    display: flex;
 }
 .headbox ul li{
-	float: left;
-	height: 60px;
 	line-height: 60px;
+    margin-left: 20px;
 }
 .headbox ul li a{
 	display: block;
@@ -60,6 +140,21 @@
 .headbox ul li span{
 	display: inline-block;
 	color: white;
+}
+.headbox .login {
+    display: flex;
+
+}
+.headbox .login li {
+    height: 60px;
+}
+.headbox .login li a{
+    font-size: 14px;
+    padding:0;
+}
+
+.headbox .login li:nth-child(2) {
+    margin-left: 15px;
 }
 .admission{
 	width: 85px;
@@ -183,6 +278,30 @@
 	border-radius: 40px;
 	background: #005dff;
 	cursor: pointer;
+}
+
+.bannerBtn .right-wrap{
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width:200px;
+    height: 40px;
+    float: left;
+    border-radius: 40px;
+    background: #005dff;
+    cursor: pointer;
+}
+.bannerBtn .right-wrap .right-child {
+    opacity:0;
+    margin-top: 20px;
+}
+.bannerBtn .right-wrap:hover .right-child {
+    opacity: 1;
+}
+
+.bannerBtn p a{
+    color: #fff;
 }
 .bannerBtn p:first-child{
 	margin-right: 106px;
@@ -741,6 +860,7 @@
 }
 
 #slide {
+    height:450px;
 }
 
 .slide-door {
@@ -845,7 +965,7 @@
 
 .new-cont {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 60px;
 }
 .left-news {
