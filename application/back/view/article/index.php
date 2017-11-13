@@ -57,7 +57,7 @@
             <div class="col-xs-1 ">
                 编 号
             </div>
-            <div class="col-xs-1 ">
+            <div class="col-xs-2 ">
                 标题
             </div>
             <div class="col-xs-1">
@@ -94,7 +94,7 @@
                 <div class="col-xs-1 ">
                     {$row_->id}
                 </div>
-                <div class="col-xs-1 " title="{$row_->name}">
+                <div class="col-xs-2 " title="{$row_->name}">
                     {$row_->name}
                 </div>
                 <div class="col-xs-1">
