@@ -13,7 +13,5 @@
     <link rel="stylesheet" type="text/css" href="__STATIC__css/hover.css"/>
     <link rel="stylesheet" type="text/css" href="__STATIC__css/video-js.css"/>
     <script type="text/javascript"  src="__STATIC__js/jquery.min.js"></script>
-    <link rel="stylesheet" href="__STATIC__css/swiper-3.4.2.min.css">
-    <script src="__STATIC__js/swiper-3.4.2.jquery.min.js"></script>
 </head>
 <body>

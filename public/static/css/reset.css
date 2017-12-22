@@ -17,7 +17,7 @@ time, mark, audio, video {
     border:0;
     outline:none;
     vertical-align:baseline;
-    font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+    /*font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;*/
 	font-family: "Microsoft YaHei",Arial,"Helvetica";
 }
 

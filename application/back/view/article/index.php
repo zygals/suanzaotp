@@ -57,7 +57,7 @@
             <div class="col-xs-1 ">
                 编 号
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
                 标题
             </div>
             <div class="col-xs-1">
@@ -69,6 +69,8 @@
             <div class="col-xs-1">
                 小图
 			</div>
+
+
             <div class="col-xs-2">
                 添加时间
 			</div>
@@ -107,7 +109,7 @@
                     </a>
                 </div>
 
-                <div class="col-xs-2">
+                <div class="col-xs-2" title="{$row_->create_time}">
                     {$row_->create_time}
                 </div>
                <div class="col-xs-1">

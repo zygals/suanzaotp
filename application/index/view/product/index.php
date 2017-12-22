@@ -1,9 +1,4 @@
 {include file="layout/head2"}
-<style>
-    .product-swiper {
-        min-width: 1240px;
-    }
-</style>
 
 <script>
     $(function () {
@@ -19,7 +14,7 @@
 <!-- 头部 -->
 
 <!-- banner -->
-<div class="swiper-container product-swiper">
+<div class="swiper-container">
     <div class="swiper-wrapper">
         <?php foreach ($list_ad as $row_) { ?>
             <div class="swiper-slide"><a <?= \app\common\model\Ad::urlOpen($row_->url, $row_->new_window) ?>><img

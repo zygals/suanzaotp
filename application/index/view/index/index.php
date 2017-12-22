@@ -21,7 +21,7 @@
             <div class="left-modal">
                 <div class="left-head">立即体验</div>
                 <div class="left-child">
-                    <img src="__STATIC__img/软件下载二维码.png" alt="">
+                    <img src="__STATIC__img/app-download.png" alt="">
                 </div>
             </div>
             <div class="right-modal">观看视频</div>
@@ -30,25 +30,25 @@
 
     <div class="head-wrap">
         <div class="headBox">
-            <h4>专注于微信公众号的直播变现工具！</h4>
+            <h4>专注于移动端更高效的网络培训课堂！</h4>
             <p class="p-head">多设备接入微信公众号，音视频同步直播，让直播更立体。</p>
             <ul class="conlumn clearfix">
                 <li>
                     <img src="__STATIC__img/livebg.png" alt="">
-                    <p class="p-one">付费课程，多种变现方式自由组合<br>全面放大内容价值。</p>
+                    <p class="p-one">多样化的变现方式自由选择,<br>获取内容更大价值。</p>
                     <div class="pos">
                         <img src="__STATIC__img/live.png" alt="">
-                        <p>一键开课</p>
-                        <p>马上直播</p>
+                        <p>内容多样</p>
+                        <p>快速变现</p>
                     </div>
                 </li>
                 <li>
                     <img src="__STATIC__img/sharebg.png" alt="">
-                    <p class="p-one">基础直播服务+定向推送服务，<br>帮助您的微信公众号快速增收涨粉</p>
+                    <p class="p-one">一键接入微信公众号，<br>快速增收涨粉</p>
                     <div class="pos pos-bottom">
                         <img src="__STATIC__img/share.png" alt="">
-                        <p>分享，将价值传播更远，
-                        <p>推广效果尽在掌握！
+                        <p>对接微信公众号,
+                        <p>实现快速营销
 <!--                        <p>一键分享</p>-->
                     </div>
                 </li>
@@ -75,8 +75,7 @@
                     <div class="bg erase-bg"></div>
                     <div class="inner">
                         <div class="img-wrapper">
-                            <img src="__STATIC__img/medium.png" alt="">
-                            <p>自媒体</p>
+                            <p>教育培训</p>
                         </div>
                     </div>
                 </li>
@@ -84,8 +83,7 @@
                     <div class="bg"></div>
                     <div class="inner">
                         <div class="img-wrapper">
-                            <img src="__STATIC__img/money.png" alt="">
-                            <p>金融</p>
+                            <p>峰会直播</p>
                         </div>
                     </div>
                 </li>
@@ -93,8 +91,7 @@
                     <div class="bg"></div>
                     <div class="inner">
                         <div class="img-wrapper">
-                            <img src="__STATIC__img/medical.png" alt="">
-                            <p>医疗</p>
+                            <p>企业直播</p>
                         </div>
                     </div>
                 </li>
@@ -102,8 +99,7 @@
                     <div class="bg"></div>
                     <div class="inner">
                         <div class="img-wrapper">
-                            <img src="__STATIC__img/shop.png" alt="">
-                            <p>电商</p>
+                            <p>微信直播</p>
                         </div>
                     </div>
                 </li>
@@ -140,10 +136,11 @@
         <h4>一键接入，让你的微信公众号秒变“直播间”</h4>
         <div class="zsPic"></div>
         <div class="bannerBtn contBtn">
-            <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">点击咨询酸枣客服</a></p>
+            <p onclick="wind()"><a target="_blank" href="
+http://p.qiao.baidu.com/im/index?siteid=11444473&ucid=21501345&cp=&cr=&cw= ">点击咨询酸枣客服</a></p>
             <div onclick="wind()" class='right-wrap'>免费试用酸枣直播
                 <ul class="right-child">
-                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+                    <li><img width="150" src="__STATIC__img/app-download.png" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -153,32 +150,32 @@
             <h1>热门应用场景</h1>
             <ul class="rangBox">
                 <li>
-                    <p>发布会</p>
-                    <span>产品发布</span>
-                    <span>产品推广</span>
-                    <span>渠道招聘</span>
-                    <span>会议营销</span>
-                </li>
-                <li>
-                    <p>培训</p>
-                    <span>客户培训</span>
-                    <span>员工培训</span>
+                    <p>培训行业</p>
+                    <span>教育培训</span>
+                    <span>线上网课</span>
                     <span>远程教育</span>
                     <span>在线课堂</span>
                 </li>
                 <li>
-                    <p>研讨会</p>
-                    <span>技术/产品研讨会</span>
-                    <span>合作伙伴大会</span>
-                    <span>渠道大会</span>
-                    <span>日常沟通会议</span>
+                    <p>企业直播</p>
+                    <span>营销直播</span>
+                    <span>产品发布</span>
+                    <span>活动直播</span>
+                    <span>员工培训</span>
                 </li>
                 <li>
-                    <p>其它</p>
-                    <span>峰会/论坛/讲座</span>
-                    <span>专业领域视频应用</span>
-                    <span>医药/金融/传媒</span>
-                    <span>赛事/互娱 </span>
+                    <p>峰会直播</p>
+                    <span>金融证券</span>
+                    <span>大会直播</span>
+                    <span>营销直播</span>
+                    <span>渠道大会</span>
+                </li>
+                <li>
+                    <p>微信直播</p>
+                    <span>赛事/互娱直播</span>
+                    <span>微课堂直播</span>
+                    <span>日常沟通直播</span>
+                    <span>微信公众号直播 </span>
                 </li>
             </ul>
         </div>
@@ -209,80 +206,15 @@
             <h3>即刻开始：用直播实现价值</h3>
             <p class="sizetitle">创新在线学习模式，引领直播课堂潮流</p>
             <div class="bannerBtn contBtn">
-                <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">在线直播点击咨询</a></p>
+                <p onclick="wind()"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=11444473&ucid=21501345&cp=&cr=&cw=">在线直播点击咨询</a></p>
                 <div onclick="wind()" class='right-wrap'>免费体验系统
                                 <ul class="right-child">
-                                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+                                    <li><img width="150" src="__STATIC__img/app-download.png" alt=""></li>
                                 </ul>
                             </div>
             </div>
         </div>
     </div>
-    <div class="listBox service">
-        <h3>多种版本供你选择</h3>
-        <p>基础直播服务+定向推送服务，帮助您的微信公众号快速增收涨粉</p>
-        <ul>
-                <li class="color_1">
-                    <div class="service_top">
-                        <h5>基本版</h5>
-                        <p>功能费：0元／年</p>
-                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">免费开通</a>
-                    </div>
-                    <div class="border">
-                        <span class="on">付费内容载体：音频、视频</span>
-                        <span class="on">付费形式：单节课、系列课</span>
-                        <span class="on">运营管理：内容、用户关系、财务</span>
-                        <span class="not">数据分析：营收趋势、用户活跃度等</span>
-                        <span class="not">邀请卡</span>
-                        <span class="not">评论互动</span>
-                        <span class="not">首页名称自定义</span>
-                        <span class="not">视频+语音直播</span>
-                        <span class="not">用户定向推送</span>
-                        <span class="not">定时直播，随时回放</span>
-                    </div>
-                </li>
-                <li class="color_2">
-                    <div class="service_top">
-                        <h5>专业版</h5>
-                        <p>功能费：3999元／年</p>
-                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
-                    </div>
-                    <div class="border">
-                        <span class="on">付费内容载体：音频、视频</span>
-                        <span class="on">付费形式：单节课、系列课</span>
-                        <span class="on">运营管理：内容、用户关系、财务</span>
-                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
-                        <span class="on">邀请卡</span>
-                        <span class="on">评论互动</span>
-                        <span class="on">首页名称自定义</span>
-                        <span class="not">视频+语音直播</span>
-                        <span class="not">用户定向推送</span>
-                        <span class="not">定时直播，随时回放</span>
-                    </div>
-                </li>
-                <li class="color_3">
-                    <div class="service_top">
-                        <h5>至尊版</h5>
-                        <p>功能费：8888元／年</p>
-                        <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
-                    </div>
-                    <div class="border">
-                        <span class="on">付费内容载体：音频、视频</span>
-                        <span class="on">付费形式：单节课、系列课</span>
-                        <span class="on">运营管理：内容、用户关系、财务</span>
-                        <span class="on">数据分析：营收趋势、用户活跃度等</span>
-                        <span class="on">邀请卡</span>
-                        <span class="on">评论互动</span>
-                        <span class="on">首页名称自定义</span>
-                        <span class="on">视频+语音直播</span>
-                        <span class="on">用户定向推送</span>
-                        <span class="on">定时直播，随时回放</span>
-                    </div>
-                </li>
-            </ul>
-    </div>
-    <div style="clear: both;"></div>
-    <a name="list_"></a>
     <div class="newsBox headBox">
         <h4>新闻资讯</h4>
         <p class="news-p">众多资讯,就在这里</p>
@@ -374,6 +306,7 @@
         $(function () {
             $('.right-modal').on('click',function () {
                 $('.video-cont').show();
+                $('video').get(0).play();
             })
             $('.close-btn').on('click',function () {
                         $('.video-cont').hide();

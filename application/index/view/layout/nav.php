@@ -71,10 +71,11 @@
             <!--</p>-->
         </ul>
         <ul class='login'>
-            <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">登录</a></li>
+            <li><a target="_blank" href="https://suanzao.llkeji.com/pc/login">登录直播间后台</a></li>
+            <li><a class="pubicBtn" target="_blank" href="http://wechat.llkeji.com/">公众号对接</a></li>
             <li class="father"><a target="_blank" href="javascript:void(0)">免费注册</a>
                 <ul class="child">
-                    <li><img width="150" src="__STATIC__img/软件下载二维码.png" alt=""></li>
+                    <li><img width="150" src="__STATIC__img/app-download.png" alt=""></li>
                 </ul>
             </li>
         </ul>

@@ -2,18 +2,16 @@
 <!-- 头部 -->
 {include file="layout/nav"}
 <div class="wrapper">
-<div class="banner">
-    <ul class="banner_box">
-        <?php foreach($list_ad as $row_){?>
-            <li style="opacity: 1;filter:alpha(opacity=100);">
-                <a   <?php echo \app\common\model\Ad::urlOpen($row_->url,$row_->new_window)?>  style="background:url(__IMGURL__{$row_->img}) center top no-repeat">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <?php foreach ($list_ad as $row_) { ?>
+            <div class="swiper-slide"><a <?= \app\common\model\Ad::urlOpen($row_->url, $row_->new_window) ?>><img
+                            src="__IMGURL__{$row_->img}" alt="暂无图片"></a></div>
+        <?php } ?>
 
-                </a>
-            </li>
-        <?php }?>
-
-
-    </ul>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination defined-pag"></div>
 </div>
 <!-- service -->
 <div class="service w1200">
@@ -22,59 +20,65 @@
     <ul>
         <li class="color_1">
             <div class="service_top">
-                <h5>基本版</h5>
-                <p>功能费：0元／年</p>
+                <h5>个人版</h5>
+                <p>功能费：0元／年</br>免费体验</p>
                 <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">免费开通</a>
             </div>
             <div class="border">
-                <span class="on">付费内容载体：音频、视频</span>
-                <span class="on">付费形式：单节课、系列课</span>
-                <span class="on">运营管理：内容、用户关系、财务</span>
-                <span class="not">数据分析：营收趋势、用户活跃度等</span>
-                <span class="not">邀请卡</span>
-                <span class="not">评论互动</span>
-                <span class="not">首页名称自定义</span>
-                <span class="not">视频+语音直播</span>
-                <span class="not">用户定向推送</span>
-                <span class="not">定时直播，随时回放</span>
+                <span class="on"><b>直播方式：</b>视频直播、语音直播、支持上传课件及视频、<i>电台音频直播</i></span>
+                <span class="on"><b>观看权限：</b>付费、免费、加密、试看</span>
+                <span class="on"><b>直播嵌入：</b><i>微信公众号</i></span>
+                <span class="on"><b>支持课程：</b>单节课、系列课</span>
+                <span class="on"><b>开课定义：</b>订时/预约直播、随时回放</span>
+                <span class="on"><b>营销推广：</b>社交平台一键分享、邀请卡、分销式裂变、广告链接、<i>消息定向推送、广告位、精选推荐</i></span>
+                <span class="on"><b>深层互动：</b>弹幕聊天、禁言/清屏、花样打赏、<i>投票、私信、在线报名</i></span>
+                <span class="on"><b>运营管理：</b>内容变现、用户关系、财务统计</span>
+                <span class="on"><b>数据分析：</b>直播数据统计、用户来源统计、新增关注量统计、<i>数据可视化</i></span>
+                <span class="on"><b>直播终端：</b>手机、PC端摄像头、摄像机、无人机、<i>支持导播切换、支持连麦、支持嘉宾远程实时切换</i></span>
+                <span class="on"><b>个性定义：</b><i>消息自定义、直播间权限自定义、LOGO自定义</i></span>
+                <span class="on"><b>独享服务：</b>7*12小时咨询服务、<i>专属客户经理、新功能独享服务</i></span>
             </div>
         </li>
         <li class="color_2">
             <div class="service_top">
-                <h5>专业版</h5>
-                <p>功能费：3999元／年</p>
+                <h5>基本版</h5>
+                <p>功能费：4800元／年</br>流量不限，享用不尽</p>
                 <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
             </div>
             <div class="border">
-                <span class="on">付费内容载体：音频、视频</span>
-                <span class="on">付费形式：单节课、系列课</span>
-                <span class="on">运营管理：内容、用户关系、财务</span>
-                <span class="on">数据分析：营收趋势、用户活跃度等</span>
-                <span class="on">邀请卡</span>
-                <span class="on">评论互动</span>
-                <span class="on">首页名称自定义</span>
-                <span class="not">视频+语音直播</span>
-                <span class="not">用户定向推送</span>
-                <span class="not">定时直播，随时回放</span>
+                 <span class="on"><b>直播方式：</b>视频直播、语音直播、支持上传课件及视频、<i>电台音频直播</i></span>
+                <span class="on"><b>观看权限：</b>付费、免费、加密、试看</span>
+                <span class="on"><b>直播嵌入：</b>微信公众号</span>
+                <span class="on"><b>支持课程：</b>单节课、系列课</span>
+                <span class="on"><b>开课定义：</b>订时/预约直播、随时回放</span>         
+                <span class="on"><b>营销推广：</b>社交平台一键分享、邀请卡、分销式裂变、广告链接、消息定向推送、<i>广告位、精选推荐</i></span>
+                <span class="on"><b>深层互动：</b>弹幕聊天、禁言/清屏、花样打赏、<i>投票、私信、在线报名</i></span>
+                <span class="on"><b>运营管理：</b>内容变现、用户关系、财务统计</span>
+                <span class="on"><b>数据分析：</b>直播数据统计、用户来源统计、新增关注量统计、<i>数据可视化</i></span>
+                <span class="on"><b>直播终端：</b>手机、PC端摄像头、摄像机、无人机、<i>支持导播切换、支持连麦、支持嘉宾远程实时切换</i></span>
+                <span class="on"><b>个性定义：</b>消息自定义、<i>直播间权限自定义、LOGO自定义</i></span>
+                <span class="on"><b>独享服务：</b>7*12小时咨询服务、<i>专属客户经理、新功能独享服务</i></span>
             </div>
         </li>
         <li class="color_3">
             <div class="service_top">
-                <h5>至尊版</h5>
-                <p>功能费：8888元／年</p>
+                <h5>专业版</h5>
+                <p>功能费：8888元／年</br>VIP尊享特权</p>
                 <a href="http://p.qiao.baidu.com/im/index?siteid=11111618&ucid=21501345&cp=&cr=&cw=">立即开通</a>
             </div>
             <div class="border">
-                <span class="on">付费内容载体：音频、视频</span>
-                <span class="on">付费形式：单节课、系列课</span>
-                <span class="on">运营管理：内容、用户关系、财务</span>
-                <span class="on">数据分析：营收趋势、用户活跃度等</span>
-                <span class="on">邀请卡</span>
-                <span class="on">评论互动</span>
-                <span class="on">首页名称自定义</span>
-                <span class="on">视频+语音直播</span>
-                <span class="on">用户定向推送</span>
-                <span class="on">定时直播，随时回放</span>
+                 <span class="on"><b>直播方式：</b>视频直播、语音直播、支持上传课件及视频、电台音频直播</span>
+                <span class="on"><b>观看权限：</b>付费、免费、加密、试看</span>
+                <span class="on"><b>直播嵌入：</b>微信公众号</span>
+                <span class="on"><b>支持课程：</b>单节课、系列课</span>
+                <span class="on"><b>开课定义：</b>订时/预约直播、随时回放</span>
+                <span class="on"><b>营销推广：</b>社交平台一键分享、邀请卡、分销式裂变、广告链接、消息定向推送、广告位、精选推荐</span>
+                <span class="on"><b>深层互动：</b>弹幕聊天、禁言/清屏、花样打赏、投票、私信、在线报名</span>
+                <span class="on"><b>运营管理：</b>内容变现、用户关系、财务统计</span>
+                <span class="on"><b>数据分析：</b>直播数据统计、用户来源统计、新增关注量统计、数据可视化</span>
+                <span class="on"><b>直播终端：</b>手机、PC端摄像头、摄像机、无人机、支持导播切换、支持连麦、支持嘉宾远程实时切换</span>
+                <span class="on"><b>个性定义：</b>消息自定义、直播间权限自定义、LOGO自定义</span>
+                <span class="on"><b>独享服务：</b>7*12小时咨询服务、专属客户经理、新功能独享服务</span>
             </div>
         </li>
     </ul>

@@ -25,9 +25,6 @@ class Index extends Base {
         return $this->fetch('', compact('list_ad', 'list_cate', 'list_news_index', 'row_news','cate_id','list_friend','seo'));
     }
     public function read_new(Request $request){
-
-        //用自己的公用模板
-        $this->view->engine->layout('layout/base_article_detail');
         $data = $request->param();
         $row_ = Article::findOne($data['id']);
         if(!$row_){

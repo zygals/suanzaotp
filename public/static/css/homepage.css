@@ -156,7 +156,7 @@ body{ overflow-x:hidden}
 .newsList .page{ margin-left:200px; margin-top:20px;}
 .newsList .page span{ display:block; line-height:30px; margin-top:10px;}
 
-.product{ min-width: 1240px; overflow:hidden;}
+.product{ overflow:hidden;}
 .product .hd{ overflow:hidden; height:70px; background:#f5f5f5;}
 .product .hd li{ width:312px; height:70px; padding-left:288px; line-height:70px; float:left; background:#f5f5f5;}
 .product .hd li.n1{ background:url(../images/hd01.png) no-repeat 255px  center  #f5f5f5;}

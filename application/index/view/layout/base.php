@@ -5,6 +5,7 @@
     <title>{$seo->title}</title>
     <meta name="keywords" content="{$seo->keywords}">
     <meta name="description" content="{$seo->description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="Shortcut Icon" href="__STATIC__img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="__STATIC__css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="__STATIC__css/index.css"/>
@@ -25,14 +26,6 @@
 
 </body>
 
-<script>
-    //var _hmt = _hmt || [];
-    //(function() {
-    //  var hm = document.createElement("script");
-    //  hm.src = "https://hm.baidu.com/hm.js?302a5cf99fe1e8b14bd879aba90f1341";
-    //  var s = document.getElementsByTagName("script")[0];
-    //  s.parentNode.insertBefore(hm, s);
-    //})();
-</script>
+
 
 </html>

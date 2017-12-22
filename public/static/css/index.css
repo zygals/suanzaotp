@@ -2,6 +2,14 @@
 ins#qiao-invite-wrap {
     z-index: 9998 !important;
 }
+.headbox .login li:last-child a:hover{
+	text-decoration:none; 
+	color:#FFF;
+}
+.headbox .login li:first-child a:hover{
+	text-decoration:none; 
+	color:#fff;
+}
 .video-cont {
     position: fixed;
     left: 0;
@@ -34,12 +42,26 @@ ins#qiao-invite-wrap {
     left: -40%;
     top: -20%;
 }
-
+@media screen and (max-width: 1366px) {
+    .video-play {
+        left: -8%;
+    }
+    .video-cont .close-btn {
+        position: absolute;
+        top: -24%;
+        right: -12%;
+    }
+}
 .video-play video {
     z-index: 10001;
     opacity: 1;
 }
-
+@media screen and (max-width: 1366px){
+    .video-play video {
+        width: 800px;
+        height: 500px;
+    }
+}
 .wrapper{
 	width: 100%;
     min-width:1240px;
@@ -63,16 +85,21 @@ ins#qiao-invite-wrap {
 
 .swiper-container .modal-area {
     position: absolute;
-    left: 18%;
+    left: 17%;
     bottom: 13%;
     z-index: 999;
     display: flex;
     color: #fff;
 }
 
+@media screen and (max-width: 1366px){
+    .swiper-container .modal-area {
+        left: 13%;
+    }
+}
+
 .swiper-container .modal-area img {
     width: 180px;
-    height:180px;
     z-index:999;
     opacity:0;
 }
@@ -103,18 +130,20 @@ ins#qiao-invite-wrap {
     width: 100%;
 }
 .headbox{
-	width:1240px;
+	width:1366px;
+	min-width: 1366px;
 	height: 60px;
 	line-height: 60px;
 	margin: 0 auto;
     display: flex;
+	
 }
 .head-logo {
     margin-top: 5px;
 }
 
 .headbox ul{
-    margin-left: 120px;
+    margin-left: 68px;
     display: flex;
 }
 .headbox ul li{
@@ -126,6 +155,11 @@ ins#qiao-invite-wrap {
 	padding:0 15px;
 	font-size: 16px;
     color: #fff;
+}
+.pubicBtn:hover{
+	color:#fff !important;	
+	text-decoration: none!important;
+	outline: none;
 }
 .headbox ul li .zixun{
 	color:#f30;
@@ -144,13 +178,33 @@ ins#qiao-invite-wrap {
 
 }
 .headbox .login li {
-    height: 60px;
+    font-size: 17px;
 }
-.headbox .login li a{
-    font-size: 14px;
-    padding:0;
+.headbox .login li:first-child a{
+    line-height:10px;
+    padding:10px 20px;
+    border: 1px solid #1783fd;
+    border-radius: 30px;
+    background-color: #1783fd;
+    margin-top: 14px;
 }
-
+.pubicBtn{
+	line-height:10px;
+    padding:10px 20px!important;
+    border: 1px solid #ffa200;
+    border-radius: 30px;
+    background-color: #ffa200;
+    margin-top: 14px;
+	}   
+	
+.headbox .login li:last-child a{
+    line-height:10px;
+    padding:10px 20px;
+    border: 1px solid #f30;
+    border-radius: 30px;
+    background-color: #f30;
+    margin-top: 14px;
+}
 .headbox .login li:nth-child(2) {
     margin-left: 15px;
 }
@@ -362,7 +416,7 @@ ins#qiao-invite-wrap {
 }
 
 .conlumn .pos-bottom {
-    left: 19%;
+    left: 30%;
     top: 21%;
 }
 .conlumn .pos:hover {
@@ -794,7 +848,7 @@ ins#qiao-invite-wrap {
 }
 .record{
 	width: 100%;
-	height: 40px;
+	height: 90px;
 	background: #1a1c28;
 	border-top: 1px solid #5c5e6a;
 	padding-top: 30px;
@@ -930,8 +984,9 @@ ins#qiao-invite-wrap {
     margin-top: 25px;
 }
 .inner .img-wrapper p {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 42px;
+    letter-spacing: 2px;
+    line-height: 130px;
     letter-spacing: 2px;
 }
 .inner .preview {
@@ -970,7 +1025,6 @@ ins#qiao-invite-wrap {
     width: 55%;
 }
 .left-news li{
-	height: 120px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
@@ -979,7 +1033,7 @@ ins#qiao-invite-wrap {
 
 .left-news li img {
     width: 170px;
-	/*height: 120px;*/
+	height: 120px;
 }
 .news-tit {
     margin-left: 40px;
@@ -998,7 +1052,7 @@ ins#qiao-invite-wrap {
 }
 
 .right-news {
-    width: 30%;
+    width: 340px;
     height: 460px;
     background: rgba(248,248,248,.8);
 }
@@ -1016,7 +1070,6 @@ ins#qiao-invite-wrap {
     font-size: 26px;
     padding-top: 20px;
     font-weight: bold;
-	width:370px;
 }
 
 .product h2 {
@@ -1143,7 +1196,6 @@ ins#qiao-invite-wrap {
     background-color: #fafafa;
     padding: 50px 0;
     color: #333;
-    margin-top: 100px;
 }
 
 .left-about h3 {
@@ -1334,4 +1386,25 @@ ins#qiao-invite-wrap {
 }
 .bread a:hover{
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 1366px){
+    .headbox {
+        width: 92%;
+    }
+    .headbox ul {
+        margin-left: 10px;
+    }
+    .swiper-container .modal-area img {
+        width: 100%;
+    }
+    .swiper-container .modal-area .left-modal {
+        margin-right: 32px;
+    }
+    .swiper-container .modal-area .left-modal .left-child {
+        left: -78%;
+    }
+    .slide-door li {
+        height: 400px;
+    }
 }

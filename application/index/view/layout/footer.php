@@ -5,14 +5,7 @@
 </div>
 <div class="wrapper">
 <div class="footer">
-    <div class="footbox">
-        <ul class="footul">
-            <li>7X12小时售后服务</li>
-            <li>0元免费使用</li>
-            <li>0上限观看承诺</li>
-            <li>1V1竭诚服务</li>
-        </ul>
-    </div>
+
     <div class="footcont clearfix">
         <ul>
             <li>
@@ -71,25 +64,18 @@
 
 </div>
 <div class="record">
-    <p>北京龙链科技有限公司</p>
-    <p>Copyright © 1998 - 2017 Suanzao.Com.Cn All Rights </p>
+    <p>北京龙链科技有限公司|关于我们|隐私政策</p>
+    <p>Copyright © 1998 - 2017 Suanzao.Com.Cn All Rights|京公网安备11010502033423号 </p>
+     <p>不良信息举报中心|网络违法举报网站|12318 全国文化市场举报网站</p>
+    <p>公安部网络违法犯罪举报网站热线0731-81872901 举报邮箱：jubao@inke.cn</p>
 </div>
 <p class="pcText">
     粤ICP备15103069号-1
 
-    <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F532ffbc9449acbb6afbe7a513e653144' type='text/javascript'%3E%3C/script%3E")) </script>
-    百度统计代码： <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?532ffbc9449acbb6afbe7a513e653144";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    离线宝代码： <script>
-        var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?532ffbc9449acbb6afbe7a513e653144"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script> 
-    <script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=11111618"></script>
+ 
+    <!--百度商桥:-->
+    <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7bcde2c14c5efc40af53283bc26e2f76' type='text/javascript'%3E%3C/script%3E")) </script>
+    
 </p>
 </div>
 <script>
