@@ -73,7 +73,7 @@ ins#qiao-invite-wrap {
     left: 0;
     top: 0;
     z-index: 99;
-	width: 100%;
+    min-width: 1240px;
 	height: 60px;
     color: #fff;
 	background: #1a1c28;
@@ -130,8 +130,7 @@ ins#qiao-invite-wrap {
     width: 100%;
 }
 .headbox{
-	width:1366px;
-	min-width: 1366px;
+    margin: 0 auto;
 	height: 60px;
 	line-height: 60px;
 	margin: 0 auto;
@@ -367,6 +366,7 @@ ins#qiao-invite-wrap {
     width: 1200px;
     margin:0 auto;
     text-align: center;
+    margin-top: -4px;
 }
 .conlumn {
     width: 1200px;
@@ -1390,9 +1390,13 @@ ins#qiao-invite-wrap {
 
 @media screen and (max-width: 1366px){
     .headbox {
-        width: 92%;
+        width: 90%;
+        margin: 0 auto;
     }
     .headbox ul {
+        margin-left: 10px;
+    }
+    .headbox ul li{
         margin-left: 10px;
     }
     .swiper-container .modal-area img {
