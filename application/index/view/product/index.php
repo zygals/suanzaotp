@@ -1,4 +1,9 @@
 {include file="layout/head2"}
+<style>
+    .product-swiper {
+        min-width: 1240px;
+    }
+</style>
 
 <script>
     $(function () {
@@ -14,27 +19,24 @@
 <!-- 头部 -->
 
 <!-- banner -->
-<div class="wrapper">
-    <div class="banner">
-        <ul class="banner_box">
-    <?php foreach($list_ad as $row_){?>
-            <li style="opacity: 1;filter:alpha(opacity=100);">
-                <a   <?php echo \app\common\model\Ad::urlOpen($row_->url,$row_->new_window)?>  style="background:url(__IMGURL__{$row_->img}) center top no-repeat">
+<div class="swiper-container product-swiper">
+    <div class="swiper-wrapper">
+        <?php foreach ($list_ad as $row_) { ?>
+            <div class="swiper-slide"><a <?= \app\common\model\Ad::urlOpen($row_->url, $row_->new_window) ?>><img
+                            src="__IMGURL__{$row_->img}" alt="暂无图片"></a></div>
+        <?php } ?>
 
-                </a>
-            </li>
-          <?php }?>
-
-
-        </ul>
     </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination defined-pag"></div>
+</div>
     <!-- box1 -->
     <div class="product">
         <div class="hd">
             <ul class="">
                 <li class="n1 on">基础直播</li>
                 <li class="n2">定向推送</li>
-                <li class="n3"><a href="__IMGURL__/index/read_new/id/44">酸枣使用教程</a></li>
+                <li class="n3"><a href="__IMGURL__index/read_new/id/44">酸枣使用教程</a></li>
             </ul>
         </div>
         <div class="bd">
@@ -77,6 +79,23 @@
                         <div class="img"><img src="__STATIC__images/img04.png"></div>
                     </div>
                 </div>
+                <div class="p2">
+                                    <div class="w1200">
+                                        <div class="img"><img src="__STATIC__images/img03.png"></div>
+                                        <dl>
+                                            <dt>传播推广</dt>
+                                            <dd>
+                                                1、分发渠道 2、跨平台 高并发
+                                            </dd>
+                                            <dd>
+                                                首页推荐：置顶突出 重点推荐 获取更多关注 提升活动影响力<br>
+                                                主流媒体：同步推送到腾讯、微博等主流媒体，图文、音频、视频直播，呈现形式更丰富。<br>
+                                                一键分享：一键分享腾讯  微博等社交平台 <br>
+                                                清晰流畅：百万并发  高清  稳定  无卡顿
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
             </div>
             <div class="porduct_2 item">
                 <div class="p4">
