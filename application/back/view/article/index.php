@@ -69,8 +69,6 @@
             <div class="col-xs-1">
                 小图
 			</div>
-
-
             <div class="col-xs-2">
                 添加时间
 			</div>

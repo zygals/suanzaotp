@@ -53,10 +53,7 @@
             </li>
             <li class="father"><a href="{:url('product/index')}"
                                   style="<?php if(request()->controller()=='Product' && request()->action()=='index'){?>color:rgb(32,112,251);<?php }?>">产品体验</a>
-                <ul class="child">
-                    <li><a href="">直播间</a></li>
-                    <li><a href="">直播间趣</a></li>
-                </ul>
+
             </li>
             <li><a href="{:url('product/service')}"
                    style="<?php if(request()->controller()=='Product'&& request()->action()=='service'){?>color:rgb(32,112,251);<?php }?>">购买服务</a>
