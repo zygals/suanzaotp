@@ -130,7 +130,7 @@ ins#qiao-invite-wrap {
     width: 100%;
 }
 .headbox{
-    margin: 0 auto;
+    width: 1366px;
 	height: 60px;
 	line-height: 60px;
 	margin: 0 auto;
@@ -1390,8 +1390,7 @@ ins#qiao-invite-wrap {
 
 @media screen and (max-width: 1366px){
     .headbox {
-        width: 90%;
-        margin: 0 auto;
+        width: 92%;
     }
     .headbox ul {
         margin-left: 10px;
