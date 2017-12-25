@@ -44,7 +44,7 @@
 
 <div class="header">
     <div class="headbox clearfix">
-        <a href="#">
+        <a href="#" style="margin-left: 14px">
             <img src="__STATIC__img/LOGO.png" alt="" class="head-logo">
         </a>
         <ul>
