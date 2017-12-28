@@ -155,6 +155,10 @@ ins#qiao-invite-wrap {
 	font-size: 16px;
     color: #fff;
 }
+@media screen and (max-width: 1366px) {
+    .headbox ul li a {
+    }
+}
 .pubicBtn:hover{
 	color:#fff !important;	
 	text-decoration: none!important;
@@ -1390,7 +1394,7 @@ ins#qiao-invite-wrap {
 
 @media screen and (max-width: 1366px){
     .headbox {
-        width: 92%;
+        width: 85%;
     }
     .headbox ul {
         margin-left: 10px;
@@ -1409,5 +1413,14 @@ ins#qiao-invite-wrap {
     }
     .slide-door li {
         height: 400px;
+    }
+    .headbox ul li a {
+        font-size: 14px;
+    }
+    .headbox .login li:first-child a {
+        padding: 10px 15px;
+    }
+    .headbox .login li:last-child a {
+        padding: 10px 15px;
     }
 }

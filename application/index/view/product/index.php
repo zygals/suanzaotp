@@ -31,7 +31,8 @@
             <ul class="">
                 <li class="n1 on">基础直播</li>
                 <li class="n2">定向推送</li>
-                <li class="n3"><a href="__IMGURL__index/read_new/id/44">酸枣使用教程</a></li>
+                <li class="n3"><a href="/index/{:url('read_new/id/44.html')}">酸枣使用教程</a></li>
+<!--                <li class="n3"><a href="__IMGURL__index/read_new/id/44">酸枣使用教程</a></li>-->
             </ul>
         </div>
         <div class="bd">

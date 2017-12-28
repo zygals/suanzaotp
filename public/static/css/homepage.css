@@ -200,3 +200,16 @@ body{ min-width:1270px;overflow-x:hidden}
 .product .bd .p5 .img{ float:left;}
 
 .product .bd .item{ display:none;}
+
+@media screen and (max-width: 1366px) {
+    .product .hd li {
+        width: 33%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .product .hd li.n1{ background:url(../images/hd01.png) no-repeat 152px  center  #f5f5f5;}
+    .product .hd li.n2{ background:url(../images/hd11.png) no-repeat 152px  center  #f5f5f5;}
+    .product .hd li.n1.on{ background:url(../images/hd02.png) no-repeat 152px  center  #e6e6e6; color:#d53c3e;}
+    .product .hd li.n2.on{ background:url(../images/hd12.png) no-repeat 152px  center  #e6e6e6; color:#d53c3e;}
+
+}
